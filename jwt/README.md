@@ -32,6 +32,6 @@ $ go test -c -o jwt-bench.exec
 $ time ./jwt-bench.exec -v -benchmem -bench ^Benchmark -count 5 -run ^$ > bench.txt
 ```
 
-## Well
+## Results
 
 See [bench.txt](https://github.com/cristalhq/benchmarks/blob/main/jwt/bench.txt)
