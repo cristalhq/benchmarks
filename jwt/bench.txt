@@ -1,0 +1,369 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/cristaloleg/benches/jwt
+Benchmark_cristalhq_jwt_EdDSA
+Benchmark_cristalhq_jwt_EdDSA/sign-EdDSA
+Benchmark_cristalhq_jwt_EdDSA/sign-EdDSA-10         	   48038	     24601 ns/op	       172.0 B/token	     480 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_EdDSA/sign-EdDSA-10         	   48878	     24576 ns/op	       172.0 B/token	     480 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_EdDSA/sign-EdDSA-10         	   48878	     24644 ns/op	       172.0 B/token	     480 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_EdDSA/sign-EdDSA-10         	   48692	     24599 ns/op	       172.0 B/token	     480 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_EdDSA/sign-EdDSA-10         	   48694	     24541 ns/op	       172.0 B/token	     480 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_EdDSA/check-EdDSA
+Benchmark_cristalhq_jwt_EdDSA/check-EdDSA-10        	   23143	     51990 ns/op	       0 B/op	       0 allocs/op
+Benchmark_cristalhq_jwt_EdDSA/check-EdDSA-10        	   23143	     51840 ns/op	       0 B/op	       0 allocs/op
+Benchmark_cristalhq_jwt_EdDSA/check-EdDSA-10        	   23125	     51857 ns/op	       0 B/op	       0 allocs/op
+Benchmark_cristalhq_jwt_EdDSA/check-EdDSA-10        	   23136	     51951 ns/op	       0 B/op	       0 allocs/op
+Benchmark_cristalhq_jwt_EdDSA/check-EdDSA-10        	   23149	     51848 ns/op	       0 B/op	       0 allocs/op
+Benchmark_cristalhq_jwt_HMAC
+Benchmark_cristalhq_jwt_HMAC/sign-HS256
+Benchmark_cristalhq_jwt_HMAC/sign-HS256-10          	 1687972	       711.4 ns/op	       129.0 B/token	     416 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS256-10          	 1685468	       712.2 ns/op	       129.0 B/token	     416 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS256-10          	 1684227	       714.1 ns/op	       129.0 B/token	     416 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS256-10          	 1688468	       709.2 ns/op	       129.0 B/token	     416 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS256-10          	 1689355	       711.6 ns/op	       129.0 B/token	     416 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS384
+Benchmark_cristalhq_jwt_HMAC/sign-HS384-10          	  725773	      1620 ns/op	       150.0 B/token	     448 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS384-10          	  728716	      1623 ns/op	       150.0 B/token	     448 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS384-10          	  730410	      1621 ns/op	       150.0 B/token	     448 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS384-10          	  726630	      1620 ns/op	       150.0 B/token	     448 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS384-10          	  725888	      1621 ns/op	       150.0 B/token	     448 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS512
+Benchmark_cristalhq_jwt_HMAC/sign-HS512-10          	  724214	      1637 ns/op	       172.0 B/token	     480 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS512-10          	  722506	      1640 ns/op	       172.0 B/token	     480 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS512-10          	  693190	      1639 ns/op	       172.0 B/token	     480 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS512-10          	  719536	      1640 ns/op	       172.0 B/token	     480 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/sign-HS512-10          	  728365	      1638 ns/op	       172.0 B/token	     480 B/op	       6 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS256
+Benchmark_cristalhq_jwt_HMAC/check-HS256-10         	 3826406	       313.9 ns/op	      32 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS256-10         	 3827530	       313.5 ns/op	      32 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS256-10         	 3819402	       313.7 ns/op	      32 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS256-10         	 3819306	       313.8 ns/op	      32 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS256-10         	 3824636	       314.0 ns/op	      32 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS384
+Benchmark_cristalhq_jwt_HMAC/check-HS384-10         	  983746	      1206 ns/op	      48 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS384-10         	  988362	      1207 ns/op	      48 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS384-10         	  992890	      1205 ns/op	      48 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS384-10         	  988776	      1205 ns/op	      48 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS384-10         	  985551	      1206 ns/op	      48 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS512
+Benchmark_cristalhq_jwt_HMAC/check-HS512-10         	  980251	      1218 ns/op	      64 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS512-10         	  981992	      1220 ns/op	      64 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS512-10         	  981384	      1217 ns/op	      64 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS512-10         	  982975	      1215 ns/op	      64 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_HMAC/check-HS512-10         	  978519	      1217 ns/op	      64 B/op	       1 allocs/op
+Benchmark_cristalhq_jwt_RSA
+Benchmark_cristalhq_jwt_RSA/sign-1024-bit
+Benchmark_cristalhq_jwt_RSA/sign-1024-bit-10        	    5666	    209658 ns/op	       257.0 B/token	   16822 B/op	     109 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-1024-bit-10        	    5702	    210189 ns/op	       257.0 B/token	   16820 B/op	     109 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-1024-bit-10        	    5674	    209743 ns/op	       257.0 B/token	   16822 B/op	     109 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-1024-bit-10        	    5674	    209811 ns/op	       257.0 B/token	   16820 B/op	     109 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-1024-bit-10        	    5695	    209625 ns/op	       257.0 B/token	   16822 B/op	     109 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-2048-bit
+Benchmark_cristalhq_jwt_RSA/sign-2048-bit-10        	    1168	   1024342 ns/op	       428.0 B/token	   31383 B/op	     115 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-2048-bit-10        	    1171	   1024324 ns/op	       428.0 B/token	   31382 B/op	     115 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-2048-bit-10        	    1124	   1026749 ns/op	       428.0 B/token	   31383 B/op	     115 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-2048-bit-10        	    1165	   1023851 ns/op	       428.0 B/token	   31379 B/op	     115 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-2048-bit-10        	    1168	   1022296 ns/op	       428.0 B/token	   31382 B/op	     115 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-4096-bit
+Benchmark_cristalhq_jwt_RSA/sign-4096-bit-10        	     212	   5633548 ns/op	       769.0 B/token	   77461 B/op	     129 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-4096-bit-10        	     212	   5614326 ns/op	       769.0 B/token	   77433 B/op	     129 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-4096-bit-10        	     213	   5608067 ns/op	       769.0 B/token	   77479 B/op	     129 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-4096-bit-10        	     213	   5599901 ns/op	       769.0 B/token	   77439 B/op	     129 allocs/op
+Benchmark_cristalhq_jwt_RSA/sign-4096-bit-10        	     213	   5604916 ns/op	       769.0 B/token	   77460 B/op	     129 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-1024-bit
+Benchmark_cristalhq_jwt_RSA/check-1024-bit-10       	  102832	     11653 ns/op	    2777 B/op	      12 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-1024-bit-10       	  102446	     11652 ns/op	    2777 B/op	      12 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-1024-bit-10       	  102830	     11655 ns/op	    2777 B/op	      12 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-1024-bit-10       	  103052	     11643 ns/op	    2777 B/op	      12 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-1024-bit-10       	  102802	     11656 ns/op	    2777 B/op	      12 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-2048-bit
+Benchmark_cristalhq_jwt_RSA/check-2048-bit-10       	   42026	     28543 ns/op	    5210 B/op	      12 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-2048-bit-10       	   42163	     28530 ns/op	    5211 B/op	      12 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-2048-bit-10       	   42103	     28474 ns/op	    5210 B/op	      12 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-2048-bit-10       	   42145	     28535 ns/op	    5210 B/op	      12 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-2048-bit-10       	   42090	     28484 ns/op	    5211 B/op	      12 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-4096-bit
+Benchmark_cristalhq_jwt_RSA/check-4096-bit-10       	   14018	     85609 ns/op	   14754 B/op	      13 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-4096-bit-10       	   13992	     85693 ns/op	   14755 B/op	      13 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-4096-bit-10       	   14013	     85690 ns/op	   14753 B/op	      13 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-4096-bit-10       	   13962	     85893 ns/op	   14754 B/op	      13 allocs/op
+Benchmark_cristalhq_jwt_RSA/check-4096-bit-10       	   14006	     86031 ns/op	   14753 B/op	      13 allocs/op
+Benchmark_cristalhq_jwt_ECDSA
+Benchmark_cristalhq_jwt_ECDSA/sign-ES256
+Benchmark_cristalhq_jwt_ECDSA/sign-ES256-10         	   60254	     19792 ns/op	       172.0 B/token	    3187 B/op	      41 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES256-10         	   60559	     19794 ns/op	       172.0 B/token	    3188 B/op	      41 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES256-10         	   60518	     19774 ns/op	       172.0 B/token	    3188 B/op	      41 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES256-10         	   60669	     19758 ns/op	       172.0 B/token	    3188 B/op	      41 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES256-10         	   60580	     19757 ns/op	       172.0 B/token	    3188 B/op	      41 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES384
+Benchmark_cristalhq_jwt_ECDSA/sign-ES384-10         	    2240	    535568 ns/op	       214.0 B/token	    6591 B/op	      69 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES384-10         	    2230	    535658 ns/op	       214.0 B/token	    6591 B/op	      69 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES384-10         	    2235	    536763 ns/op	       214.0 B/token	    6591 B/op	      69 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES384-10         	    2235	    535557 ns/op	       214.0 B/token	    6592 B/op	      69 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES384-10         	    2224	    535862 ns/op	       214.0 B/token	    6592 B/op	      69 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES512
+Benchmark_cristalhq_jwt_ECDSA/sign-ES512-10         	     748	   1600164 ns/op	       262.0 B/token	    8308 B/op	      69 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES512-10         	     748	   1601715 ns/op	       262.0 B/token	    8307 B/op	      69 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES512-10         	     745	   1600699 ns/op	       262.0 B/token	    8307 B/op	      69 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES512-10         	     746	   1601790 ns/op	       262.0 B/token	    8308 B/op	      69 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/sign-ES512-10         	     746	   1601936 ns/op	       262.0 B/token	    8307 B/op	      69 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES256
+Benchmark_cristalhq_jwt_ECDSA/check-ES256-10        	   21486	     55832 ns/op	    1248 B/op	      21 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES256-10        	   21403	     55940 ns/op	    1248 B/op	      21 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES256-10        	   21486	     55880 ns/op	    1248 B/op	      21 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES256-10        	   21499	     55820 ns/op	    1248 B/op	      21 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES256-10        	   21517	     55799 ns/op	    1248 B/op	      21 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES384
+Benchmark_cristalhq_jwt_ECDSA/check-ES384-10        	    1192	   1006077 ns/op	    4434 B/op	      72 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES384-10        	    1191	   1005289 ns/op	    4434 B/op	      72 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES384-10        	    1192	   1005020 ns/op	    4434 B/op	      72 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES384-10        	    1192	   1005469 ns/op	    4434 B/op	      72 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES384-10        	    1190	   1005587 ns/op	    4434 B/op	      72 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES512
+Benchmark_cristalhq_jwt_ECDSA/check-ES512-10        	     385	   3152044 ns/op	    5844 B/op	      72 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES512-10        	     375	   3125700 ns/op	    5844 B/op	      72 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES512-10        	     384	   3117594 ns/op	    5844 B/op	      72 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES512-10        	     384	   3117390 ns/op	    5843 B/op	      72 allocs/op
+Benchmark_cristalhq_jwt_ECDSA/check-ES512-10        	     384	   3123422 ns/op	    5843 B/op	      72 allocs/op
+Benchmark_pascaldekloe_jwt_EdDSA
+Benchmark_pascaldekloe_jwt_EdDSA/sign-EdDSA
+Benchmark_pascaldekloe_jwt_EdDSA/sign-EdDSA-10      	   49888	     23990 ns/op	       166.0 B/token	     224 B/op	       2 allocs/op
+Benchmark_pascaldekloe_jwt_EdDSA/sign-EdDSA-10      	   49944	     23996 ns/op	       166.0 B/token	     224 B/op	       2 allocs/op
+Benchmark_pascaldekloe_jwt_EdDSA/sign-EdDSA-10      	   50013	     24005 ns/op	       166.0 B/token	     224 B/op	       2 allocs/op
+Benchmark_pascaldekloe_jwt_EdDSA/sign-EdDSA-10      	   50034	     24005 ns/op	       166.0 B/token	     224 B/op	       2 allocs/op
+Benchmark_pascaldekloe_jwt_EdDSA/sign-EdDSA-10      	   50043	     24006 ns/op	       166.0 B/token	     224 B/op	       2 allocs/op
+Benchmark_pascaldekloe_jwt_EdDSA/check-EdDSA
+Benchmark_pascaldekloe_jwt_EdDSA/check-EdDSA-10     	   22470	     53382 ns/op	    1320 B/op	      26 allocs/op
+Benchmark_pascaldekloe_jwt_EdDSA/check-EdDSA-10     	   22452	     53394 ns/op	    1320 B/op	      26 allocs/op
+Benchmark_pascaldekloe_jwt_EdDSA/check-EdDSA-10     	   22459	     53411 ns/op	    1320 B/op	      26 allocs/op
+Benchmark_pascaldekloe_jwt_EdDSA/check-EdDSA-10     	   22479	     53422 ns/op	    1320 B/op	      26 allocs/op
+Benchmark_pascaldekloe_jwt_EdDSA/check-EdDSA-10     	   22455	     53391 ns/op	    1320 B/op	      26 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS256
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS256-10       	 1510303	       799.2 ns/op	       123.0 B/token	     656 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS256-10       	 1493904	       801.0 ns/op	       123.0 B/token	     656 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS256-10       	 1500766	       800.3 ns/op	       123.0 B/token	     656 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS256-10       	 1496866	       801.5 ns/op	       123.0 B/token	     656 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS256-10       	 1497058	       799.6 ns/op	       123.0 B/token	     656 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS384
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS384-10       	  447494	      2683 ns/op	       144.0 B/token	     992 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS384-10       	  445864	      2672 ns/op	       144.0 B/token	     992 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS384-10       	  439272	      2677 ns/op	       144.0 B/token	     992 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS384-10       	  434118	      2672 ns/op	       144.0 B/token	     992 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS384-10       	  443274	      2679 ns/op	       144.0 B/token	     992 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS512
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS512-10       	  444696	      2688 ns/op	       166.0 B/token	    1024 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS512-10       	  444146	      2686 ns/op	       166.0 B/token	    1024 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS512-10       	  440916	      2689 ns/op	       166.0 B/token	    1024 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS512-10       	  444733	      2690 ns/op	       166.0 B/token	    1024 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/sign-HS512-10       	  446044	      2693 ns/op	       166.0 B/token	    1024 B/op	       7 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS256
+Benchmark_pascaldekloe_jwt_HMAC/check-HS256-10      	  614578	      1905 ns/op	    1752 B/op	      31 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS256-10      	  621232	      1903 ns/op	    1752 B/op	      31 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS256-10      	  635602	      1912 ns/op	    1752 B/op	      31 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS256-10      	  619737	      1901 ns/op	    1752 B/op	      31 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS256-10      	  631855	      1905 ns/op	    1752 B/op	      31 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS384
+Benchmark_pascaldekloe_jwt_HMAC/check-HS384-10      	  316443	      3780 ns/op	    2168 B/op	      32 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS384-10      	  316234	      3778 ns/op	    2168 B/op	      32 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS384-10      	  315879	      3778 ns/op	    2168 B/op	      32 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS384-10      	  319636	      3786 ns/op	    2168 B/op	      32 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS384-10      	  314652	      3780 ns/op	    2168 B/op	      32 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS512
+Benchmark_pascaldekloe_jwt_HMAC/check-HS512-10      	  313888	      3799 ns/op	    2216 B/op	      32 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS512-10      	  312476	      3799 ns/op	    2216 B/op	      32 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS512-10      	  315922	      3803 ns/op	    2216 B/op	      32 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS512-10      	  308049	      3808 ns/op	    2216 B/op	      32 allocs/op
+Benchmark_pascaldekloe_jwt_HMAC/check-HS512-10      	  312576	      3807 ns/op	    2216 B/op	      32 allocs/op
+Benchmark_pascaldekloe_jwt_RSA
+Benchmark_pascaldekloe_jwt_RSA/sign-1024-bit
+Benchmark_pascaldekloe_jwt_RSA/sign-1024-bit-10     	    5692	    210238 ns/op	       251.0 B/token	   16543 B/op	     105 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-1024-bit-10     	    5742	    209625 ns/op	       251.0 B/token	   16545 B/op	     105 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-1024-bit-10     	    5713	    209636 ns/op	       251.0 B/token	   16544 B/op	     105 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-1024-bit-10     	    5694	    209486 ns/op	       251.0 B/token	   16544 B/op	     105 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-1024-bit-10     	    5677	    209629 ns/op	       251.0 B/token	   16544 B/op	     105 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-2048-bit
+Benchmark_pascaldekloe_jwt_RSA/sign-2048-bit-10     	    1167	   1021585 ns/op	       422.0 B/token	   31131 B/op	     111 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-2048-bit-10     	    1176	   1021849 ns/op	       422.0 B/token	   31130 B/op	     111 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-2048-bit-10     	    1174	   1027102 ns/op	       422.0 B/token	   31133 B/op	     111 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-2048-bit-10     	    1167	   1022249 ns/op	       422.0 B/token	   31132 B/op	     111 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-2048-bit-10     	    1174	   1021065 ns/op	       422.0 B/token	   31132 B/op	     111 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-4096-bit
+Benchmark_pascaldekloe_jwt_RSA/sign-4096-bit-10     	     213	   5610722 ns/op	       763.0 B/token	   77066 B/op	     125 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-4096-bit-10     	     213	   5609565 ns/op	       763.0 B/token	   77064 B/op	     125 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-4096-bit-10     	     213	   5611519 ns/op	       763.0 B/token	   77086 B/op	     125 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-4096-bit-10     	     213	   5608090 ns/op	       763.0 B/token	   77081 B/op	     125 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/sign-4096-bit-10     	     213	   5609843 ns/op	       763.0 B/token	   77064 B/op	     125 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-1024-bit
+Benchmark_pascaldekloe_jwt_RSA/check-1024-bit-10    	   90940	     13158 ns/op	    4138 B/op	      37 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-1024-bit-10    	   91090	     13146 ns/op	    4138 B/op	      37 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-1024-bit-10    	   90820	     13161 ns/op	    4138 B/op	      37 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-1024-bit-10    	   91384	     13154 ns/op	    4138 B/op	      37 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-1024-bit-10    	   91460	     13138 ns/op	    4138 B/op	      37 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-2048-bit
+Benchmark_pascaldekloe_jwt_RSA/check-2048-bit-10    	   40386	     29648 ns/op	    6763 B/op	      37 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-2048-bit-10    	   40392	     29723 ns/op	    6764 B/op	      37 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-2048-bit-10    	   40418	     29667 ns/op	    6764 B/op	      37 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-2048-bit-10    	   40459	     29658 ns/op	    6764 B/op	      37 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-2048-bit-10    	   40522	     29623 ns/op	    6764 B/op	      37 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-4096-bit
+Benchmark_pascaldekloe_jwt_RSA/check-4096-bit-10    	   13657	     87844 ns/op	   16629 B/op	      38 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-4096-bit-10    	   13681	     87948 ns/op	   16631 B/op	      38 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-4096-bit-10    	   13652	     87778 ns/op	   16629 B/op	      38 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-4096-bit-10    	   13653	     87939 ns/op	   16630 B/op	      38 allocs/op
+Benchmark_pascaldekloe_jwt_RSA/check-4096-bit-10    	   13664	     87823 ns/op	   16628 B/op	      38 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES256
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES256-10      	   60277	     19603 ns/op	       166.0 B/token	    2835 B/op	      34 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES256-10      	   60956	     19623 ns/op	       166.0 B/token	    2835 B/op	      34 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES256-10      	   61306	     19601 ns/op	       166.0 B/token	    2835 B/op	      34 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES256-10      	   61209	     19603 ns/op	       166.0 B/token	    2835 B/op	      34 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES256-10      	   61102	     19597 ns/op	       166.0 B/token	    2835 B/op	      34 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES384
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES384-10      	    2238	    536110 ns/op	       208.0 B/token	    6145 B/op	      62 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES384-10      	    2236	    536136 ns/op	       208.0 B/token	    6145 B/op	      62 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES384-10      	    2238	    536494 ns/op	       208.0 B/token	    6145 B/op	      62 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES384-10      	    2236	    535921 ns/op	       208.0 B/token	    6145 B/op	      62 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES384-10      	    2236	    536471 ns/op	       208.0 B/token	    6145 B/op	      62 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES512
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES512-10      	     750	   1602887 ns/op	       256.0 B/token	    7716 B/op	      62 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES512-10      	     748	   1602064 ns/op	       256.0 B/token	    7716 B/op	      62 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES512-10      	     748	   1600806 ns/op	       256.0 B/token	    7716 B/op	      62 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES512-10      	     750	   1602336 ns/op	       256.0 B/token	    7715 B/op	      62 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/sign-ES512-10      	     748	   1601573 ns/op	       256.0 B/token	    7715 B/op	      62 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES256
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES256-10     	   20866	     57413 ns/op	    2537 B/op	      46 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES256-10     	   20901	     57395 ns/op	    2537 B/op	      46 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES256-10     	   20896	     57373 ns/op	    2537 B/op	      46 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES256-10     	   20887	     57442 ns/op	    2537 B/op	      46 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES256-10     	   20892	     57363 ns/op	    2537 B/op	      46 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES384
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES384-10     	    1190	   1008136 ns/op	    5642 B/op	      96 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES384-10     	    1191	   1008285 ns/op	    5642 B/op	      96 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES384-10     	    1183	   1007909 ns/op	    5642 B/op	      96 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES384-10     	    1189	   1008161 ns/op	    5643 B/op	      96 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES384-10     	    1190	   1007879 ns/op	    5642 B/op	      96 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES512
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES512-10     	     386	   3097249 ns/op	    7180 B/op	      97 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES512-10     	     386	   3097214 ns/op	    7180 B/op	      97 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES512-10     	     386	   3098215 ns/op	    7180 B/op	      97 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES512-10     	     386	   3097509 ns/op	    7180 B/op	      97 allocs/op
+Benchmark_pascaldekloe_jwt_ECDSA/check-ES512-10     	     386	   3096805 ns/op	    7180 B/op	      97 allocs/op
+Benchmark_golang_jwt_jwt_EdDSA
+Benchmark_golang_jwt_jwt_EdDSA-10                   	1000000000	         0.0000001 ns/op	       0 B/op	       0 allocs/op
+Benchmark_golang_jwt_jwt_EdDSA-10                   	1000000000	         0.0000000 ns/op	       0 B/op	       0 allocs/op
+Benchmark_golang_jwt_jwt_EdDSA-10                   	1000000000	         0.0000000 ns/op	       0 B/op	       0 allocs/op
+Benchmark_golang_jwt_jwt_EdDSA-10                   	1000000000	         0.0000000 ns/op	       0 B/op	       0 allocs/op
+Benchmark_golang_jwt_jwt_EdDSA-10                   	1000000000	       0 B/op	       0 allocs/op
+Benchmark_golang_jwt_jwt_HMAC
+Benchmark_golang_jwt_jwt_HMAC/sign-HS256
+Benchmark_golang_jwt_jwt_HMAC/sign-HS256-10         	  781130	      1482 ns/op	       129.0 B/token	    1696 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS256-10         	  798369	      1476 ns/op	       129.0 B/token	    1696 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS256-10         	  810096	      1478 ns/op	       129.0 B/token	    1696 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS256-10         	  802693	      1476 ns/op	       129.0 B/token	    1696 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS256-10         	  810577	      1470 ns/op	       129.0 B/token	    1696 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS384
+Benchmark_golang_jwt_jwt_HMAC/sign-HS384-10         	  362635	      3333 ns/op	       150.0 B/token	    2080 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS384-10         	  360958	      3330 ns/op	       150.0 B/token	    2080 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS384-10         	  358340	      3336 ns/op	       150.0 B/token	    2080 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS384-10         	  354702	      3337 ns/op	       150.0 B/token	    2080 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS384-10         	  358450	      3347 ns/op	       150.0 B/token	    2080 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS512
+Benchmark_golang_jwt_jwt_HMAC/sign-HS512-10         	  358262	      3353 ns/op	       172.0 B/token	    2176 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS512-10         	  355081	      3364 ns/op	       172.0 B/token	    2176 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS512-10         	  359236	      3361 ns/op	       172.0 B/token	    2176 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS512-10         	  357702	      3368 ns/op	       172.0 B/token	    2176 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/sign-HS512-10         	  356360	      3362 ns/op	       172.0 B/token	    2176 B/op	      27 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS256
+Benchmark_golang_jwt_jwt_HMAC/check-HS256-10        	  464704	      2555 ns/op	    3248 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS256-10        	  445372	      2548 ns/op	    3248 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS256-10        	  465698	      2551 ns/op	    3248 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS256-10        	  466240	      2552 ns/op	    3248 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS256-10        	  472140	      2547 ns/op	    3248 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS384
+Benchmark_golang_jwt_jwt_HMAC/check-HS384-10        	  267934	      4412 ns/op	    3616 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS384-10        	  271386	      4429 ns/op	    3616 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS384-10        	  271707	      4426 ns/op	    3616 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS384-10        	  269170	      4416 ns/op	    3616 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS384-10        	  271563	      4426 ns/op	    3616 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS512
+Benchmark_golang_jwt_jwt_HMAC/check-HS512-10        	  269169	      4454 ns/op	    3680 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS512-10        	  270244	      4450 ns/op	    3680 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS512-10        	  269605	      4451 ns/op	    3680 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS512-10        	  268952	      4443 ns/op	    3680 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_HMAC/check-HS512-10        	  267988	      4434 ns/op	    3680 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_RSA
+Benchmark_golang_jwt_jwt_RSA/sign-1024-bit
+Benchmark_golang_jwt_jwt_RSA/sign-1024-bit-10       	    5660	    210562 ns/op	       257.0 B/token	   17849 B/op	     124 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-1024-bit-10       	    5709	    210480 ns/op	       257.0 B/token	   17849 B/op	     124 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-1024-bit-10       	    5682	    210307 ns/op	       257.0 B/token	   17849 B/op	     124 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-1024-bit-10       	    5704	    210917 ns/op	       257.0 B/token	   17850 B/op	     124 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-1024-bit-10       	    5719	    210507 ns/op	       257.0 B/token	   17849 B/op	     124 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-2048-bit
+Benchmark_golang_jwt_jwt_RSA/sign-2048-bit-10       	    1174	   1020157 ns/op	       428.0 B/token	   32761 B/op	     130 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-2048-bit-10       	    1177	   1019760 ns/op	       428.0 B/token	   32764 B/op	     130 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-2048-bit-10       	    1168	   1020055 ns/op	       428.0 B/token	   32760 B/op	     130 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-2048-bit-10       	    1177	   1020451 ns/op	       428.0 B/token	   32759 B/op	     130 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-2048-bit-10       	    1174	   1019583 ns/op	       428.0 B/token	   32761 B/op	     130 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-4096-bit
+Benchmark_golang_jwt_jwt_RSA/sign-4096-bit-10       	     213	   5605568 ns/op	       769.0 B/token	   79502 B/op	     144 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-4096-bit-10       	     213	   5605539 ns/op	       769.0 B/token	   79522 B/op	     144 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-4096-bit-10       	     213	   5605496 ns/op	       769.0 B/token	   79560 B/op	     144 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-4096-bit-10       	     213	   5604844 ns/op	       769.0 B/token	   79540 B/op	     144 allocs/op
+Benchmark_golang_jwt_jwt_RSA/sign-4096-bit-10       	     213	   5602424 ns/op	       769.0 B/token	   79487 B/op	     144 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-1024-bit
+Benchmark_golang_jwt_jwt_RSA/check-1024-bit-10      	   85509	     14024 ns/op	    5723 B/op	      59 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-1024-bit-10      	   85266	     13967 ns/op	    5722 B/op	      59 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-1024-bit-10      	   85592	     14012 ns/op	    5722 B/op	      59 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-1024-bit-10      	   85672	     14023 ns/op	    5723 B/op	      59 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-1024-bit-10      	   85806	     14000 ns/op	    5723 B/op	      59 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-2048-bit
+Benchmark_golang_jwt_jwt_RSA/check-2048-bit-10      	   38884	     30938 ns/op	    8461 B/op	      59 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-2048-bit-10      	   38496	     30866 ns/op	    8461 B/op	      59 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-2048-bit-10      	   38930	     30792 ns/op	    8461 B/op	      59 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-2048-bit-10      	   38858	     30817 ns/op	    8461 B/op	      59 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-2048-bit-10      	   38990	     30793 ns/op	    8461 B/op	      59 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-4096-bit
+Benchmark_golang_jwt_jwt_RSA/check-4096-bit-10      	   13519	     88761 ns/op	   18614 B/op	      60 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-4096-bit-10      	   13521	     88787 ns/op	   18615 B/op	      60 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-4096-bit-10      	   13515	     88781 ns/op	   18616 B/op	      60 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-4096-bit-10      	   13510	     88740 ns/op	   18613 B/op	      60 allocs/op
+Benchmark_golang_jwt_jwt_RSA/check-4096-bit-10      	   13528	     88630 ns/op	   18615 B/op	      60 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA
+Benchmark_golang_jwt_jwt_ECDSA/sign-256-bit
+Benchmark_golang_jwt_jwt_ECDSA/sign-256-bit-10      	   58587	     20416 ns/op	       172.0 B/token	    3996 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-256-bit-10      	   58545	     20413 ns/op	       172.0 B/token	    3996 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-256-bit-10      	   58958	     20373 ns/op	       172.0 B/token	    3996 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-256-bit-10      	   58999	     20471 ns/op	       172.0 B/token	    3996 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-256-bit-10      	   58796	     20388 ns/op	       172.0 B/token	    3996 B/op	      54 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-384-bit
+Benchmark_golang_jwt_jwt_ECDSA/sign-384-bit-10      	    2222	    536719 ns/op	       214.0 B/token	    7434 B/op	      82 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-384-bit-10      	    2233	    536769 ns/op	       214.0 B/token	    7434 B/op	      82 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-384-bit-10      	    2212	    536847 ns/op	       214.0 B/token	    7434 B/op	      82 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-384-bit-10      	    2234	    536737 ns/op	       214.0 B/token	    7434 B/op	      82 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-384-bit-10      	    2216	    536669 ns/op	       214.0 B/token	    7434 B/op	      82 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-521-bit
+Benchmark_golang_jwt_jwt_ECDSA/sign-521-bit-10      	     748	   1602664 ns/op	       262.0 B/token	    9180 B/op	      82 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-521-bit-10      	     748	   1601860 ns/op	       262.0 B/token	    9180 B/op	      82 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-521-bit-10      	     747	   1601900 ns/op	       262.0 B/token	    9179 B/op	      82 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-521-bit-10      	     750	   1602989 ns/op	       262.0 B/token	    9180 B/op	      82 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/sign-521-bit-10      	     748	   1603239 ns/op	       262.0 B/token	    9180 B/op	      82 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-256-bit
+Benchmark_golang_jwt_jwt_ECDSA/check-256-bit-10     	   20563	     58236 ns/op	    4041 B/op	      68 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-256-bit-10     	   20600	     58305 ns/op	    4041 B/op	      68 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-256-bit-10     	   20587	     58258 ns/op	    4041 B/op	      68 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-256-bit-10     	   20572	     58275 ns/op	    4041 B/op	      68 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-256-bit-10     	   20587	     58224 ns/op	    4041 B/op	      68 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-384-bit
+Benchmark_golang_jwt_jwt_ECDSA/check-384-bit-10     	    1180	   1010285 ns/op	    7292 B/op	     119 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-384-bit-10     	    1188	   1010886 ns/op	    7292 B/op	     119 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-384-bit-10     	    1188	   1010517 ns/op	    7292 B/op	     119 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-384-bit-10     	    1188	   1010456 ns/op	    7292 B/op	     119 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-384-bit-10     	    1188	   1010825 ns/op	    7291 B/op	     119 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-521-bit
+Benchmark_golang_jwt_jwt_ECDSA/check-521-bit-10     	     386	   3100910 ns/op	    8796 B/op	     119 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-521-bit-10     	     386	   3108435 ns/op	    8796 B/op	     119 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-521-bit-10     	     386	   3101219 ns/op	    8795 B/op	     119 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-521-bit-10     	     386	   3102096 ns/op	    8796 B/op	     119 allocs/op
+Benchmark_golang_jwt_jwt_ECDSA/check-521-bit-10     	     386	   3101261 ns/op	    8796 B/op	     119 allocs/op
+PASS
