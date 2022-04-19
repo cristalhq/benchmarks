@@ -1,0 +1,22 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/cristaloleg/benches/base64
+Benchmark_cristalhq
+Benchmark_cristalhq-10    	  586058	      2063 ns/op	3970.22 MB/s	   12288 B/op	       1 allocs/op
+Benchmark_cristalhq-10    	  591297	      2212 ns/op	3703.11 MB/s	   12288 B/op	       1 allocs/op
+Benchmark_cristalhq-10    	  534670	      2254 ns/op	3633.67 MB/s	   12288 B/op	       1 allocs/op
+Benchmark_cristalhq-10    	  544071	      2248 ns/op	3644.62 MB/s	   12288 B/op	       1 allocs/op
+Benchmark_cristalhq-10    	  534746	      2093 ns/op	3913.14 MB/s	   12288 B/op	       1 allocs/op
+Benchmark_golang
+Benchmark_golang-10       	  203595	      5799 ns/op	1412.60 MB/s	   24576 B/op	       2 allocs/op
+Benchmark_golang-10       	  206269	      5834 ns/op	1404.17 MB/s	   24576 B/op	       2 allocs/op
+Benchmark_golang-10       	  205230	      5795 ns/op	1413.72 MB/s	   24576 B/op	       2 allocs/op
+Benchmark_golang-10       	  207208	      5828 ns/op	1405.53 MB/s	   24576 B/op	       2 allocs/op
+Benchmark_golang-10       	  204903	      5803 ns/op	1411.58 MB/s	   24576 B/op	       2 allocs/op
+Benchmark_segmentio
+Benchmark_segmentio-10    	  590043	      1958 ns/op	4184.40 MB/s	   24576 B/op	       2 allocs/op
+Benchmark_segmentio-10    	  617035	      1956 ns/op	4187.37 MB/s	   24576 B/op	       2 allocs/op
+Benchmark_segmentio-10    	  610040	      1945 ns/op	4211.46 MB/s	   24576 B/op	       2 allocs/op
+Benchmark_segmentio-10    	  607477	      1950 ns/op	4201.10 MB/s	   24576 B/op	       2 allocs/op
+Benchmark_segmentio-10    	  618952	      1972 ns/op	4153.74 MB/s	   24576 B/op	       2 allocs/op
+PASS
