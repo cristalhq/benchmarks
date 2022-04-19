@@ -4,21 +4,21 @@ import (
 	"bytes"
 	"testing"
 
-	bencode2 "github.com/IncSW/go-bencode"
-	bencode8 "github.com/anacrolix/torrent/bencode"
-	bencode7 "github.com/chihaya/chihaya/frontend/http/bencode"
-	bencode1 "github.com/cristalhq/bencode"
-	bencode16 "github.com/cuberat/go-bencode"
-	bencode11 "github.com/ehmry/go-bencode"
-	bencode6 "github.com/jackpal/bencode-go"
-	bencode15 "github.com/lajide/bencode"
-	bencode13 "github.com/lwch/bencode"
-	bencode5 "github.com/marksamman/bencode"
-	bencode4 "github.com/nabilanam/bencode/encoder"
-	bencode9 "github.com/owenliang/dht"
-	bencode12 "github.com/stints/bencode"
-	bencode10 "github.com/tumdum/bencoding"
-	bencode3 "github.com/zeebo/bencode"
+	IncSW "github.com/IncSW/go-bencode"
+	anacrolix "github.com/anacrolix/torrent/bencode"
+	chihaya "github.com/chihaya/chihaya/frontend/http/bencode"
+	cristalhq "github.com/cristalhq/bencode"
+	cuberat "github.com/cuberat/go-bencode"
+	ehmry "github.com/ehmry/go-bencode"
+	jackpal "github.com/jackpal/bencode-go"
+	lajide "github.com/lajide/bencode"
+	lwch "github.com/lwch/bencode"
+	marksamman "github.com/marksamman/bencode"
+	nabilanam "github.com/nabilanam/bencode/encoder"
+	owenliang "github.com/owenliang/dht"
+	stints "github.com/stints/bencode"
+	tumdum "github.com/tumdum/bencoding"
+	zeebo "github.com/zeebo/bencode"
 )
 
 var marshalBenchData = map[string]interface{}{
@@ -42,7 +42,7 @@ var marshalBenchData = map[string]interface{}{
 func Benchmark_cristalhq_Marshal(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		_, err := bencode1.Marshal(marshalBenchData)
+		_, err := cristalhq.Marshal(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -53,7 +53,7 @@ func Benchmark_cristalhq_MarshalTo(b *testing.B) {
 	dst := make([]byte, 0, 1<<12)
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		_, err := bencode1.MarshalTo(dst, marshalBenchData)
+		_, err := cristalhq.MarshalTo(dst, marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -63,7 +63,7 @@ func Benchmark_cristalhq_MarshalTo(b *testing.B) {
 func Benchmark_IncSW_Marshal(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		_, err := bencode2.Marshal(marshalBenchData)
+		_, err := IncSW.Marshal(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -74,7 +74,7 @@ func Benchmark_IncSW_MarshalTo(b *testing.B) {
 	dst := make([]byte, 0, 1<<12)
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		_, err := bencode2.MarshalTo(dst, marshalBenchData)
+		_, err := IncSW.MarshalTo(dst, marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -84,7 +84,7 @@ func Benchmark_IncSW_MarshalTo(b *testing.B) {
 func Benchmark_Zeebo_Marshal(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		_, err := bencode3.EncodeBytes(marshalBenchData)
+		_, err := zeebo.EncodeBytes(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -94,7 +94,7 @@ func Benchmark_Zeebo_Marshal(b *testing.B) {
 func Benchmark_Marksamman_Marshal(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		err := bencode5.Encode(marshalBenchData)
+		err := marksamman.Encode(marshalBenchData)
 		if err == nil {
 			b.Fatal("got nil")
 		}
@@ -105,7 +105,7 @@ func Benchmark_Anacrolix_Marshal(b *testing.B) {
 	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		err := bencode8.NewEncoder(w).Encode(marshalBenchData)
+		err := anacrolix.NewEncoder(w).Encode(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -116,7 +116,7 @@ func Benchmark_Nabilanam_Marshal(b *testing.B) {
 	b.Skip()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		res := bencode4.New(marshalBenchData).Encode()
+		res := nabilanam.New(marshalBenchData).Encode()
 		if res != "" && b.N%3 == 66666 {
 			b.Fatal("empty")
 		}
@@ -128,7 +128,7 @@ func Benchmark_Jackpal_Marshal(b *testing.B) {
 	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		err := bencode6.Marshal(w, marshalBenchData)
+		err := jackpal.Marshal(w, marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -140,7 +140,7 @@ func Benchmark_Chihaya_Marshal(b *testing.B) {
 	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		err := bencode7.NewEncoder(w).Encode(marshalBenchData)
+		err := chihaya.NewEncoder(w).Encode(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -151,7 +151,7 @@ func Benchmark_Owenliang_Marshal(b *testing.B) {
 	b.Skip()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		_, err := bencode9.Encode(marshalBenchData)
+		_, err := owenliang.Encode(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -163,7 +163,7 @@ func Benchmark_Tumdum_Marshal(b *testing.B) {
 	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		err := bencode10.NewEncoder(w).Encode(marshalBenchData)
+		err := tumdum.NewEncoder(w).Encode(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -175,7 +175,7 @@ func Benchmark_Ehmry_Marshal(b *testing.B) {
 	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		err := bencode11.NewEncoder(w).Encode(marshalBenchData)
+		err := ehmry.NewEncoder(w).Encode(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -186,7 +186,7 @@ func Benchmark_Stints_Marshal(b *testing.B) {
 	b.Skip()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		d := bencode12.NewEncoder().Encode(marshalBenchData)
+		d := stints.NewEncoder().Encode(marshalBenchData)
 		if d == nil {
 			b.Fatal("is nil")
 		}
@@ -198,7 +198,7 @@ func Benchmark_Lwch_Marshal(b *testing.B) {
 	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		err := bencode13.NewEncoder(w).Encode(marshalBenchData)
+		err := lwch.NewEncoder(w).Encode(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -210,7 +210,7 @@ func Benchmark_Lajide_Marshal(b *testing.B) {
 	buf := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		err := bencode15.NewEncoder(buf).Encode(marshalBenchData)
+		err := lajide.NewEncoder(buf).Encode(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -222,7 +222,7 @@ func Benchmark_Cuberat_Marshal(b *testing.B) {
 	buf := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		err := bencode16.NewEncoder(buf).Encode(marshalBenchData)
+		err := cuberat.NewEncoder(buf).Encode(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}

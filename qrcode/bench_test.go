@@ -4,16 +4,16 @@ import (
 	"math/rand"
 	"testing"
 
-	boombuler_barcode "github.com/boombuler/barcode/qr"
-	cristalhq_qrcode "github.com/cristalhq/qrcode"
-	skip2_go_qrcode "github.com/skip2/go-qrcode"
-	yeqown_go_qrcode "github.com/yeqown/go-qrcode"
-	rsc_qr "rsc.io/qr"
+	boombuler "github.com/boombuler/barcode/qr"
+	cristalhq "github.com/cristalhq/qrcode"
+	skip2_go "github.com/skip2/go-qrcode"
+	yeqown "github.com/yeqown/go-qrcode"
+	rsc "rsc.io/qr"
 )
 
 var benchURL = "otpauth://totp/Example:alice@bob.com?secret=JBSWY3DPEHPK3PXP&issuer=Example"
 
-func Benchmark_cristalhq_qrcode(b *testing.B) {
+func Benchmark_cristalhq(b *testing.B) {
 	content := benchURL
 	bitmap := make([]byte, 2500)
 
@@ -23,7 +23,7 @@ func Benchmark_cristalhq_qrcode(b *testing.B) {
 	var sink int64
 
 	for i := 0; i < b.N; i++ {
-		qr, err := cristalhq_qrcode.EncodeInto(bitmap, content, cristalhq_qrcode.M)
+		qr, err := cristalhq.EncodeInto(bitmap, content, cristalhq.M)
 		checkErr(b, err)
 
 		c := qr.Image().At(10, 10)
@@ -33,7 +33,7 @@ func Benchmark_cristalhq_qrcode(b *testing.B) {
 	sinkValue(sink)
 }
 
-func Benchmark_rsc_qr(b *testing.B) {
+func Benchmark_rsc(b *testing.B) {
 	content := benchURL
 
 	b.ReportAllocs()
@@ -42,7 +42,7 @@ func Benchmark_rsc_qr(b *testing.B) {
 	var sink int64
 
 	for i := 0; i < b.N; i++ {
-		qr, err := rsc_qr.Encode(content, rsc_qr.M)
+		qr, err := rsc.Encode(content, rsc.M)
 		checkErr(b, err)
 
 		c := qr.Image().At(10, 10)
@@ -52,7 +52,7 @@ func Benchmark_rsc_qr(b *testing.B) {
 	sinkValue(sink)
 }
 
-func Benchmark_yeqown_go_qrcode(b *testing.B) {
+func Benchmark_yeqown(b *testing.B) {
 	content := benchURL
 
 	b.ReportAllocs()
@@ -61,7 +61,7 @@ func Benchmark_yeqown_go_qrcode(b *testing.B) {
 	var sink int64
 
 	for i := 0; i < b.N; i++ {
-		code, err := yeqown_go_qrcode.New(content)
+		code, err := yeqown.New(content)
 		checkErr(b, err)
 
 		_ = code
@@ -72,7 +72,7 @@ func Benchmark_yeqown_go_qrcode(b *testing.B) {
 	sinkValue(sink)
 }
 
-func Benchmark_boombuler_barcode(b *testing.B) {
+func Benchmark_boombuler(b *testing.B) {
 	content := benchURL
 
 	b.ReportAllocs()
@@ -81,7 +81,7 @@ func Benchmark_boombuler_barcode(b *testing.B) {
 	var sink int64
 
 	for i := 0; i < b.N; i++ {
-		img, err := boombuler_barcode.Encode(content, boombuler_barcode.M, boombuler_barcode.Auto)
+		img, err := boombuler.Encode(content, boombuler.M, boombuler.Auto)
 		checkErr(b, err)
 
 		c := img.At(10, 10)
@@ -91,7 +91,7 @@ func Benchmark_boombuler_barcode(b *testing.B) {
 	sinkValue(sink)
 }
 
-func Benchmark_skip2_go_qrcode(b *testing.B) {
+func Benchmark_skip2_go(b *testing.B) {
 	content := benchURL
 
 	b.ReportAllocs()
@@ -100,7 +100,7 @@ func Benchmark_skip2_go_qrcode(b *testing.B) {
 	var sink int64
 
 	for i := 0; i < b.N; i++ {
-		qr, err := skip2_go_qrcode.New(content, skip2_go_qrcode.Medium)
+		qr, err := skip2_go.New(content, skip2_go.Medium)
 		checkErr(b, err)
 
 		c := qr.Image(256).At(10, 10)
