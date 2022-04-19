@@ -1,0 +1,34 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/cristalhq/benchmarks/qrcode
+Benchmark_cristalhq_qrcode
+Benchmark_cristalhq_qrcode-10     	   81516	     12597 ns/op	   23648 B/op	      23 allocs/op
+Benchmark_cristalhq_qrcode-10     	   94460	     12476 ns/op	   23648 B/op	      23 allocs/op
+Benchmark_cristalhq_qrcode-10     	   96574	     12447 ns/op	   23648 B/op	      23 allocs/op
+Benchmark_cristalhq_qrcode-10     	   96430	     12513 ns/op	   23648 B/op	      23 allocs/op
+Benchmark_cristalhq_qrcode-10     	   95835	     12467 ns/op	   23648 B/op	      23 allocs/op
+Benchmark_rsc_qr
+Benchmark_rsc_qr-10               	   90033	     13231 ns/op	   25629 B/op	      32 allocs/op
+Benchmark_rsc_qr-10               	   90102	     13233 ns/op	   25628 B/op	      32 allocs/op
+Benchmark_rsc_qr-10               	   90963	     13283 ns/op	   25628 B/op	      32 allocs/op
+Benchmark_rsc_qr-10               	   90224	     13259 ns/op	   25628 B/op	      32 allocs/op
+Benchmark_rsc_qr-10               	   91130	     13277 ns/op	   25629 B/op	      32 allocs/op
+Benchmark_yeqown_go_qrcode
+Benchmark_yeqown_go_qrcode-10     	    1558	    763854 ns/op	 2946564 B/op	    3377 allocs/op
+Benchmark_yeqown_go_qrcode-10     	    1568	    771234 ns/op	 2946561 B/op	    3377 allocs/op
+Benchmark_yeqown_go_qrcode-10     	    1534	    776270 ns/op	 2946558 B/op	    3377 allocs/op
+Benchmark_yeqown_go_qrcode-10     	    1532	    771639 ns/op	 2946423 B/op	    3377 allocs/op
+Benchmark_yeqown_go_qrcode-10     	    1531	    771569 ns/op	 2946441 B/op	    3377 allocs/op
+Benchmark_boombuler_barcode
+Benchmark_boombuler_barcode-10    	     685	   1726112 ns/op	  129302 B/op	     755 allocs/op
+Benchmark_boombuler_barcode-10    	     696	   1728505 ns/op	  129313 B/op	     755 allocs/op
+Benchmark_boombuler_barcode-10    	     690	   1724337 ns/op	  129316 B/op	     755 allocs/op
+Benchmark_boombuler_barcode-10    	     694	   1724463 ns/op	  129312 B/op	     755 allocs/op
+Benchmark_boombuler_barcode-10    	     690	   1728233 ns/op	  129309 B/op	     755 allocs/op
+Benchmark_skip2_go_qrcode
+Benchmark_skip2_go_qrcode-10      	    1945	    604560 ns/op	  355200 B/op	    8268 allocs/op
+Benchmark_skip2_go_qrcode-10      	    1976	    602861 ns/op	  355200 B/op	    8268 allocs/op
+Benchmark_skip2_go_qrcode-10      	    1981	    603096 ns/op	  355200 B/op	    8268 allocs/op
+Benchmark_skip2_go_qrcode-10      	    1963	    602700 ns/op	  355200 B/op	    8268 allocs/op
+Benchmark_skip2_go_qrcode-10      	    1971	    602855 ns/op	  355202 B/op	    8268 allocs/op
+PASS
