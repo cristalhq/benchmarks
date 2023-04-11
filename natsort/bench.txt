@@ -1,0 +1,85 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/cristaloleg/benches/natsort
+BenchmarkStdlib_Strings
+BenchmarkStdlib_Strings/small
+BenchmarkStdlib_Strings/small-10         	  561956	      2117 ns/op	      24 B/op	       1 allocs/op
+BenchmarkStdlib_Strings/small-10         	  547368	      2121 ns/op	      24 B/op	       1 allocs/op
+BenchmarkStdlib_Strings/small-10         	  545804	      2125 ns/op	      24 B/op	       1 allocs/op
+BenchmarkStdlib_Strings/huge
+BenchmarkStdlib_Strings/huge-10          	    6225	    188029 ns/op	      24 B/op	       1 allocs/op
+BenchmarkStdlib_Strings/huge-10          	    6210	    188691 ns/op	      24 B/op	       1 allocs/op
+BenchmarkStdlib_Strings/huge-10          	    5698	    187595 ns/op	      24 B/op	       1 allocs/op
+BenchmarkCristalhq_Sort
+BenchmarkCristalhq_Sort/small
+BenchmarkCristalhq_Sort/small-10         	  316620	      3794 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCristalhq_Sort/small-10         	  314504	      3780 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCristalhq_Sort/small-10         	  310911	      3792 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCristalhq_Sort/huge
+BenchmarkCristalhq_Sort/huge-10          	    2227	    522022 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCristalhq_Sort/huge-10          	    2328	    525377 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCristalhq_Sort/huge-10          	    2269	    519937 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCristalhq_Slice
+BenchmarkCristalhq_Slice/small
+BenchmarkCristalhq_Slice/small-10        	  295246	      4081 ns/op	      24 B/op	       1 allocs/op
+BenchmarkCristalhq_Slice/small-10        	  294901	      4051 ns/op	      24 B/op	       1 allocs/op
+BenchmarkCristalhq_Slice/small-10        	  295615	      4119 ns/op	      24 B/op	       1 allocs/op
+BenchmarkCristalhq_Slice/huge
+BenchmarkCristalhq_Slice/huge-10         	    2246	    537975 ns/op	      24 B/op	       1 allocs/op
+BenchmarkCristalhq_Slice/huge-10         	    2256	    537370 ns/op	      24 B/op	       1 allocs/op
+BenchmarkCristalhq_Slice/huge-10         	    2218	    532765 ns/op	      24 B/op	       1 allocs/op
+BenchmarkFacette_Sort
+BenchmarkFacette_Sort/small
+BenchmarkFacette_Sort/small-10           	    6409	    184176 ns/op	  101048 B/op	    1810 allocs/op
+BenchmarkFacette_Sort/small-10           	    6489	    180198 ns/op	  101429 B/op	    1815 allocs/op
+BenchmarkFacette_Sort/small-10           	    6244	    182682 ns/op	  101242 B/op	    1812 allocs/op
+BenchmarkFacette_Sort/huge
+BenchmarkFacette_Sort/huge-10            	      45	  25645570 ns/op	16170764 B/op	  323866 allocs/op
+BenchmarkFacette_Sort/huge-10            	      43	  25996568 ns/op	16258429 B/op	  325554 allocs/op
+BenchmarkFacette_Sort/huge-10            	      44	  25354756 ns/op	16208050 B/op	  324899 allocs/op
+BenchmarkMaruel_Sort
+BenchmarkMaruel_Sort/small
+BenchmarkMaruel_Sort/small-10            	  247838	      4673 ns/op	      24 B/op	       1 allocs/op
+BenchmarkMaruel_Sort/small-10            	  250066	      4685 ns/op	      24 B/op	       1 allocs/op
+BenchmarkMaruel_Sort/small-10            	  250335	      4690 ns/op	      24 B/op	       1 allocs/op
+BenchmarkMaruel_Sort/huge
+BenchmarkMaruel_Sort/huge-10             	    1462	    808731 ns/op	      24 B/op	       1 allocs/op
+BenchmarkMaruel_Sort/huge-10             	    1460	    816428 ns/op	      24 B/op	       1 allocs/op
+BenchmarkMaruel_Sort/huge-10             	    1400	    827159 ns/op	      24 B/op	       1 allocs/op
+BenchmarkDangogh_Slice
+BenchmarkDangogh_Slice/small
+BenchmarkDangogh_Slice/small-10          	   91945	     13080 ns/op	      24 B/op	       1 allocs/op
+BenchmarkDangogh_Slice/small-10          	   89635	     13014 ns/op	      24 B/op	       1 allocs/op
+BenchmarkDangogh_Slice/small-10          	   92401	     13013 ns/op	      24 B/op	       1 allocs/op
+BenchmarkDangogh_Slice/huge
+BenchmarkDangogh_Slice/huge-10           	     738	   1639175 ns/op	      24 B/op	       1 allocs/op
+BenchmarkDangogh_Slice/huge-10           	     728	   1658934 ns/op	      24 B/op	       1 allocs/op
+BenchmarkDangogh_Slice/huge-10           	     724	   1647764 ns/op	      24 B/op	       1 allocs/op
+BenchmarkEvie404_Slice
+BenchmarkEvie404_Slice/small
+BenchmarkEvie404_Slice/small-10          	   95402	     12068 ns/op	      24 B/op	       1 allocs/op
+BenchmarkEvie404_Slice/small-10          	   98350	     12067 ns/op	      24 B/op	       1 allocs/op
+BenchmarkEvie404_Slice/small-10          	   96961	     12054 ns/op	      24 B/op	       1 allocs/op
+BenchmarkEvie404_Slice/huge
+BenchmarkEvie404_Slice/huge-10           	    1470	    817867 ns/op	      24 B/op	       1 allocs/op
+BenchmarkEvie404_Slice/huge-10           	    1480	    806769 ns/op	      24 B/op	       1 allocs/op
+BenchmarkEvie404_Slice/huge-10           	    1456	    805209 ns/op	      24 B/op	       1 allocs/op
+BenchmarkMiraclesu_Slice
+BenchmarkMiraclesu_Slice/small
+BenchmarkMiraclesu_Slice/small-10        	  105171	     11270 ns/op	      57 B/op	       5 allocs/op
+BenchmarkMiraclesu_Slice/small-10        	  106788	     11159 ns/op	      57 B/op	       5 allocs/op
+BenchmarkMiraclesu_Slice/small-10        	  107000	     11291 ns/op	      57 B/op	       5 allocs/op
+BenchmarkMiraclesu_Slice/huge
+BenchmarkMiraclesu_Slice/huge-10         	     862	   1387731 ns/op	      24 B/op	       1 allocs/op
+BenchmarkMiraclesu_Slice/huge-10         	     861	   1378709 ns/op	      24 B/op	       1 allocs/op
+BenchmarkMiraclesu_Slice/huge-10         	     865	   1392451 ns/op	      24 B/op	       1 allocs/op
+BenchmarkImmortal_Slice
+BenchmarkImmortal_Slice/small
+BenchmarkImmortal_Slice/small-10         	   55617	     20679 ns/op	   12499 B/op	     385 allocs/op
+BenchmarkImmortal_Slice/small-10         	   58698	     20083 ns/op	   12494 B/op	     384 allocs/op
+BenchmarkImmortal_Slice/small-10         	   58990	     20010 ns/op	   12495 B/op	     384 allocs/op
+BenchmarkImmortal_Slice/huge
+BenchmarkImmortal_Slice/huge-10          	     782	   1515601 ns/op	  950145 B/op	   33556 allocs/op
+BenchmarkImmortal_Slice/huge-10          	     780	   1525203 ns/op	  951441 B/op	   33601 allocs/op
+BenchmarkImmortal_Slice/huge-10          	     789	   1498044 ns/op	  950063 B/op	   33555 allocs/op
+PASS
