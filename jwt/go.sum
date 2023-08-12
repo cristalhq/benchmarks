@@ -23,8 +23,8 @@ github.com/lestrrat-go/jwx v1.2.26/go.mod h1:MaiCdGbn3/cckbOFSCluJlJMmp9dmZm5hDu
 github.com/lestrrat-go/option v1.0.0/go.mod h1:5ZHFbivi4xwXxhxY9XHDe2FHo6/Z7WWmtT7T5nBBp3I=
 github.com/lestrrat-go/option v1.0.1 h1:oAzP2fvZGQKWkvHa1/SAcFolBEca1oN+mQ7eooNBEYU=
 github.com/lestrrat-go/option v1.0.1/go.mod h1:5ZHFbivi4xwXxhxY9XHDe2FHo6/Z7WWmtT7T5nBBp3I=
-github.com/pascaldekloe/jwt v1.10.0 h1:ktcIUV4TPvh404R5dIBEnPCsSwj0sqi3/0+XafE5gJs=
-github.com/pascaldekloe/jwt v1.10.0/go.mod h1:TKhllgThT7TOP5rGr2zMLKEDZRAgJfBbtKyVeRsNB9A=
+github.com/pascaldekloe/jwt v1.12.0 h1:imQSkPOtAIBAXoKKjL9ZVJuF/rVqJ+ntiLGpLyeqMUQ=
+github.com/pascaldekloe/jwt v1.12.0/go.mod h1:LiIl7EwaglmH1hWThd/AmydNCnHf/mmfluBlNqHbk8U=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
