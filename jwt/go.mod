@@ -6,7 +6,7 @@ require (
 	github.com/cristalhq/jwt/v4 v4.0.2
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/lestrrat-go/jwx v1.2.26
-	github.com/pascaldekloe/jwt v1.10.0
+	github.com/pascaldekloe/jwt v1.12.0
 )
 
 require (
