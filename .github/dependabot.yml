@@ -5,6 +5,26 @@ updates:
     schedule:
       interval: daily
   - package-ecosystem: github-actions
-    directory: "/"
+    directory: ""
+    schedule:
+      interval: daily
+  - package-ecosystem: gomod
+    directory: "base64"
+    schedule:
+      interval: daily
+  - package-ecosystem: gomod
+    directory: "bencode"
+    schedule:
+      interval: daily
+  - package-ecosystem: gomod
+    directory: "jwt"
+    schedule:
+      interval: daily
+  - package-ecosystem: gomod
+    directory: "natsort"
+    schedule:
+      interval: daily
+  - package-ecosystem: gomod
+    directory: "qrcode"
     schedule:
       interval: daily
