@@ -5,7 +5,7 @@ go 1.21
 // bencode
 require (
 	github.com/IncSW/go-bencode v0.2.2
-	github.com/cristalhq/bencode v0.2.1
+	github.com/cristalhq/bencode v0.4.0
 	github.com/jackpal/bencode-go v1.0.0
 	github.com/zeebo/bencode v1.0.0
 )

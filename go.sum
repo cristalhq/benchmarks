@@ -50,8 +50,8 @@ github.com/bradfitz/iter v0.0.0-20191230175014-e8f45d346db8 h1:GKTyiRCL6zVf5wWaq
 github.com/bradfitz/iter v0.0.0-20191230175014-e8f45d346db8/go.mod h1:spo1JLcs67NmW1aVLEgtA8Yy1elc+X8y5SRW1sFW4Og=
 github.com/cespare/xxhash/v2 v2.1.1/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
-github.com/cristalhq/bencode v0.2.1 h1:8/NJ0d7SUn3RmdSOpnLPDpARCeeN6ekMR7frUsiHf1M=
-github.com/cristalhq/bencode v0.2.1/go.mod h1:jeU9UXyYxND864Vhrommq0Aif3sGpf9HUkGK1PPh54w=
+github.com/cristalhq/bencode v0.4.0 h1:B36RbL5Gp9bnkXC5Ndqh85pPcp2kY/E742hxbtJCagQ=
+github.com/cristalhq/bencode v0.4.0/go.mod h1:UzwEwNnEAzKXxgLYQ0IUJgzy9Vd+oYjhD7PhJGVnwuY=
 github.com/cristalhq/jwt/v4 v4.0.2 h1:g/AD3h0VicDamtlM70GWGElp8kssQEv+5wYd7L9WOhU=
 github.com/cristalhq/jwt/v4 v4.0.2/go.mod h1:HnYraSNKDRag1DZP92rYHyrjyQHnVEHPNqesmzs+miQ=
 github.com/cristalhq/natsort v0.1.1 h1:UlPHSkP+Tx2f0wgoZS3N3U29nO3NF7lHvhEKuQr8LpY=
