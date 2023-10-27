@@ -19,6 +19,15 @@ require (
 	github.com/zeebo/bencode v1.0.0
 )
 
+// bson
+require (
+	github.com/cristalhq/bson v0.0.5
+	github.com/globalsign/mgo v0.0.0-20181015135952-eeefdecb41b8
+	github.com/go-micro/go-bson v1.0.0
+	go.mongodb.org/mongo-driver v1.12.1
+	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22
+)
+
 // jwt
 require (
 	github.com/cristalhq/jwt/v4 v4.0.2
