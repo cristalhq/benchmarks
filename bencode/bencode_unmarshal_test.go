@@ -7,10 +7,8 @@ import (
 
 	IncSW "github.com/IncSW/go-bencode"
 	anacrolix "github.com/anacrolix/torrent/bencode"
-	chihaya "github.com/chihaya/chihaya/frontend/http/bencode"
 	cristalhq "github.com/cristalhq/bencode"
 	cuberat "github.com/cuberat/go-bencode"
-	ehmry "github.com/ehmry/go-bencode"
 	jackpal "github.com/jackpal/bencode-go"
 	lajide "github.com/lajide/bencode"
 	lwch "github.com/lwch/bencode"
@@ -98,7 +96,6 @@ func Benchmark_MarksammanBencode_Unmarshal(b *testing.B) {
 }
 
 func Benchmark_JackpalBencode_Unmarshal(b *testing.B) {
-	b.Skip()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		r := bytes.NewReader(unmarshalBenchData)
@@ -106,14 +103,6 @@ func Benchmark_JackpalBencode_Unmarshal(b *testing.B) {
 		if err != nil && err != io.EOF {
 			b.Fatal(err)
 		}
-	}
-}
-
-func Benchmark_ChihayaBencode_Unmarshal(b *testing.B) {
-	b.Skip()
-	b.ReportAllocs()
-	for n := 0; n < b.N; n++ {
-		chihaya.Unmarshal(unmarshalBenchData)
 	}
 }
 
@@ -151,21 +140,6 @@ func Benchmark_TumdumBencoding_Unmarshal(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		err := tumdum.Unmarshal(unmarshalBenchData, &res)
-		if err != nil {
-			b.Fatal(err)
-		}
-		if res == nil {
-			b.Fatal("is nil")
-		}
-	}
-}
-
-func Benchmark_EhmryGoBencode_Unmarshal(b *testing.B) {
-	b.Skip()
-	res := map[string]interface{}{}
-	b.ReportAllocs()
-	for n := 0; n < b.N; n++ {
-		err := ehmry.Unmarshal(unmarshalBenchData, &res)
 		if err != nil {
 			b.Fatal(err)
 		}
