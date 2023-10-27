@@ -6,10 +6,8 @@ import (
 
 	IncSW "github.com/IncSW/go-bencode"
 	anacrolix "github.com/anacrolix/torrent/bencode"
-	chihaya "github.com/chihaya/chihaya/frontend/http/bencode"
 	cristalhq "github.com/cristalhq/bencode"
 	cuberat "github.com/cuberat/go-bencode"
-	ehmry "github.com/ehmry/go-bencode"
 	jackpal "github.com/jackpal/bencode-go"
 	lajide "github.com/lajide/bencode"
 	lwch "github.com/lwch/bencode"
@@ -124,23 +122,10 @@ func Benchmark_Nabilanam_Marshal(b *testing.B) {
 }
 
 func Benchmark_Jackpal_Marshal(b *testing.B) {
-	b.Skip()
 	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		err := jackpal.Marshal(w, marshalBenchData)
-		if err != nil {
-			b.Fatal(err)
-		}
-	}
-}
-
-func Benchmark_Chihaya_Marshal(b *testing.B) {
-	b.Skip()
-	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
-	b.ReportAllocs()
-	for n := 0; n < b.N; n++ {
-		err := chihaya.NewEncoder(w).Encode(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -164,18 +149,6 @@ func Benchmark_Tumdum_Marshal(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		err := tumdum.NewEncoder(w).Encode(marshalBenchData)
-		if err != nil {
-			b.Fatal(err)
-		}
-	}
-}
-
-func Benchmark_Ehmry_Marshal(b *testing.B) {
-	b.Skip()
-	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
-	b.ReportAllocs()
-	for n := 0; n < b.N; n++ {
-		err := ehmry.NewEncoder(w).Encode(marshalBenchData)
 		if err != nil {
 			b.Fatal(err)
 		}
