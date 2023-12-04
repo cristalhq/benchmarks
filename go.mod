@@ -1,14 +1,13 @@
 module github.com/cristalhq/benches
 
 go 1.21
-
 // bencode
 require (
 	github.com/IncSW/go-bencode v0.2.2
 	github.com/anacrolix/torrent v1.53.1
 	github.com/cristalhq/bencode v0.4.0
 	github.com/cuberat/go-bencode v1.0.0
-	github.com/jackpal/bencode-go v1.0.0
+	github.com/jackpal/bencode-go v1.0.2
 	github.com/lajide/bencode v0.0.0-20190629152703-fb09cf4e9a4a
 	github.com/lwch/bencode v1.0.0
 	github.com/marksamman/bencode v0.0.0-20150821143521-dc84f26e086e
