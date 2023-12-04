@@ -1,6 +1,6 @@
 module github.com/cristalhq/benches
 
-go 1.21
+go 1.21.0
 
 // bencode
 require (
