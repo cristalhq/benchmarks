@@ -1,6 +1,7 @@
 module github.com/cristalhq/benches
 
 go 1.21
+
 // bencode
 require (
 	github.com/IncSW/go-bencode v0.2.2
@@ -31,7 +32,7 @@ require (
 require (
 	github.com/cristalhq/jwt/v4 v4.0.2
 	github.com/golang-jwt/jwt v3.2.2+incompatible
-	github.com/lestrrat-go/jwx v1.2.26
+	github.com/lestrrat-go/jwx v1.2.27
 	github.com/pascaldekloe/jwt v1.12.0
 )
 
@@ -66,6 +67,5 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/smartystreets/goconvey v1.8.1 // indirect
 	github.com/yeqown/reedsolomon v1.0.0 // indirect
-	golang.org/x/crypto v0.14.0 // indirect
 	golang.org/x/image v0.13.0 // indirect
 )
