@@ -5,7 +5,7 @@ go 1.21.4
 // bencode
 require (
 	github.com/IncSW/go-bencode v0.2.2
-	github.com/anacrolix/torrent v1.53.1
+	github.com/anacrolix/torrent v1.53.2
 	github.com/cristalhq/bencode v0.4.0
 	github.com/cuberat/go-bencode v1.0.0
 	github.com/jackpal/bencode-go v1.0.2
@@ -68,4 +68,5 @@ require (
 	github.com/smartystreets/goconvey v1.8.1 // indirect
 	github.com/yeqown/reedsolomon v1.0.0 // indirect
 	golang.org/x/image v0.13.0 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
