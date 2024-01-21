@@ -5,7 +5,7 @@ go 1.21.4
 // bencode
 require (
 	github.com/IncSW/go-bencode v0.2.2
-	github.com/anacrolix/torrent v1.53.2
+	github.com/anacrolix/torrent v1.53.3
 	github.com/cristalhq/bencode v0.4.0
 	github.com/cuberat/go-bencode v1.0.0
 	github.com/jackpal/bencode-go v1.0.2
