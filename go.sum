@@ -35,8 +35,8 @@ github.com/anacrolix/stm v0.2.0/go.mod h1:zoVQRvSiGjGoTmbM0vSLIiaKjWtNPeTvXUSdJQ
 github.com/anacrolix/tagflag v0.0.0-20180109131632-2146c8d41bf0/go.mod h1:1m2U/K6ZT+JZG0+bdMK6qauP49QT4wE5pmhJXOKKCHw=
 github.com/anacrolix/tagflag v1.0.0/go.mod h1:1m2U/K6ZT+JZG0+bdMK6qauP49QT4wE5pmhJXOKKCHw=
 github.com/anacrolix/tagflag v1.1.0/go.mod h1:Scxs9CV10NQatSmbyjqmqmeQNwGzlNe0CMUMIxqHIG8=
-github.com/anacrolix/torrent v1.53.3 h1:Abb3J8p/JWUjOzHaii8kixuDOGMXz+Oh8+hwc/zA2lA=
-github.com/anacrolix/torrent v1.53.3/go.mod h1:is8GNob5qDeZ5Kq+pKPiE2xqYUi1ms7IgSB+CftZETk=
+github.com/anacrolix/torrent v1.54.0 h1:sl+2J1pHjJWq6+5G861+Yc74k2XTc/m8ijaMQR/8+2k=
+github.com/anacrolix/torrent v1.54.0/go.mod h1:is8GNob5qDeZ5Kq+pKPiE2xqYUi1ms7IgSB+CftZETk=
 github.com/apache/thrift v0.12.0/go.mod h1:cp2SuWMxlEZw2r+iP2GNCdIi4C1qmUzdZFSVb+bacwQ=
 github.com/benbjohnson/immutable v0.2.0/go.mod h1:uc6OHo6PN2++n98KHLxW8ef4W42ylHiQSENghE1ezxI=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
