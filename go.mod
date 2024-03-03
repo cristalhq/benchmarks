@@ -5,7 +5,7 @@ go 1.21.4
 // bencode
 require (
 	github.com/IncSW/go-bencode v0.2.2
-	github.com/anacrolix/torrent v1.53.3
+	github.com/anacrolix/torrent v1.55.0
 	github.com/cristalhq/bencode v0.4.0
 	github.com/cuberat/go-bencode v1.0.0
 	github.com/jackpal/bencode-go v1.0.2
@@ -58,7 +58,7 @@ require (
 
 require (
 	github.com/anacrolix/missinggo v1.3.0 // indirect
-	github.com/anacrolix/missinggo/v2 v2.7.2-0.20230527121029-a582b4f397b9 // indirect
+	github.com/anacrolix/missinggo/v2 v2.7.3 // indirect
 	github.com/fogleman/gg v1.3.0 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
