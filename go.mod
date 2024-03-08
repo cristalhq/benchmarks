@@ -32,7 +32,7 @@ require (
 require (
 	github.com/cristalhq/jwt/v4 v4.0.2
 	github.com/golang-jwt/jwt v3.2.2+incompatible
-	github.com/lestrrat-go/jwx v1.2.28
+	github.com/lestrrat-go/jwx v1.2.29
 	github.com/pascaldekloe/jwt v1.12.0
 )
 
