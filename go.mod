@@ -21,7 +21,7 @@ require (
 
 // bson
 require (
-	github.com/cristalhq/bson v0.0.7
+	github.com/cristalhq/bson v0.0.8
 	github.com/globalsign/mgo v0.0.0-20181015135952-eeefdecb41b8
 	github.com/go-micro/go-bson v1.0.0
 	go.mongodb.org/mongo-driver v1.13.1
