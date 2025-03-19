@@ -1,13 +1,7 @@
 # https://taskfile.dev
-
 version: '3'
-
-vars:
-  GREETING: Hello, World!
-
 tasks:
   default:
-    desc: show this help
     cmds:
       - task --list-all
     silent: true
@@ -18,7 +12,7 @@ tasks:
 
   run-*:
     vars:
-      NAME: '{{index .MATCH 0}}'
+      NAME: '{{index .MATCH 0}}' # get match for `run-*`
       FLAGS: '-test.v -test.benchmem -test.run ^$ -test.count 10'
     dir: '{{.NAME}}'
     cmds:
