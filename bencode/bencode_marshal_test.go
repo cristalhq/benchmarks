@@ -2,6 +2,7 @@ package bencode
 
 import (
 	"bytes"
+	"math/rand/v2"
 	"testing"
 
 	IncSW "github.com/IncSW/go-bencode"
@@ -15,6 +16,7 @@ import (
 	nabilanam "github.com/nabilanam/bencode/encoder"
 	owenliang "github.com/owenliang/dht"
 	stints "github.com/stints/bencode"
+	trim21 "github.com/trim21/go-bencode"
 	tumdum "github.com/tumdum/bencoding"
 	zeebo "github.com/zeebo/bencode"
 )
@@ -37,7 +39,7 @@ var marshalBenchData = map[string]interface{}{
 	},
 }
 
-func Benchmark_cristalhq_Marshal(b *testing.B) {
+func BenchmarkMarshal_cristalhq(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		_, err := cristalhq.Marshal(marshalBenchData)
@@ -47,7 +49,7 @@ func Benchmark_cristalhq_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_cristalhq_MarshalTo(b *testing.B) {
+func BenchmarkMarshalTo_cristalhq(b *testing.B) {
 	dst := make([]byte, 0, 1<<12)
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
@@ -58,7 +60,7 @@ func Benchmark_cristalhq_MarshalTo(b *testing.B) {
 	}
 }
 
-func Benchmark_IncSW_Marshal(b *testing.B) {
+func BenchmarkMarshal_IncSW(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		_, err := IncSW.Marshal(marshalBenchData)
@@ -68,7 +70,7 @@ func Benchmark_IncSW_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_IncSW_MarshalTo(b *testing.B) {
+func BenchmarkMarshalTo_IncSW(b *testing.B) {
 	dst := make([]byte, 0, 1<<12)
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
@@ -79,7 +81,7 @@ func Benchmark_IncSW_MarshalTo(b *testing.B) {
 	}
 }
 
-func Benchmark_Zeebo_Marshal(b *testing.B) {
+func BenchmarkMarshal_Zeebo(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		_, err := zeebo.EncodeBytes(marshalBenchData)
@@ -89,7 +91,7 @@ func Benchmark_Zeebo_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_Marksamman_Marshal(b *testing.B) {
+func BenchmarkMarshal_Marksamman(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		err := marksamman.Encode(marshalBenchData)
@@ -99,7 +101,7 @@ func Benchmark_Marksamman_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_Anacrolix_Marshal(b *testing.B) {
+func BenchmarkMarshal_Anacrolix(b *testing.B) {
 	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
@@ -110,7 +112,7 @@ func Benchmark_Anacrolix_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_Nabilanam_Marshal(b *testing.B) {
+func BenchmarkMarshal_Nabilanam(b *testing.B) {
 	b.Skip()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
@@ -121,7 +123,7 @@ func Benchmark_Nabilanam_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_Jackpal_Marshal(b *testing.B) {
+func BenchmarkMarshal_Jackpal(b *testing.B) {
 	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
@@ -132,7 +134,7 @@ func Benchmark_Jackpal_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_Owenliang_Marshal(b *testing.B) {
+func BenchmarkMarshal_Owenliang(b *testing.B) {
 	b.Skip()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
@@ -143,7 +145,7 @@ func Benchmark_Owenliang_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_Tumdum_Marshal(b *testing.B) {
+func BenchmarkMarshal_Tumdum(b *testing.B) {
 	b.Skip()
 	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
@@ -155,7 +157,7 @@ func Benchmark_Tumdum_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_Stints_Marshal(b *testing.B) {
+func BenchmarkMarshal_Stints(b *testing.B) {
 	b.Skip()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
@@ -166,7 +168,7 @@ func Benchmark_Stints_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_Lwch_Marshal(b *testing.B) {
+func BenchmarkMarshal_Lwch(b *testing.B) {
 	b.Skip()
 	w := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
@@ -178,7 +180,7 @@ func Benchmark_Lwch_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_Lajide_Marshal(b *testing.B) {
+func BenchmarkMarshal_Lajide(b *testing.B) {
 	b.Skip()
 	buf := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
@@ -190,7 +192,7 @@ func Benchmark_Lajide_Marshal(b *testing.B) {
 	}
 }
 
-func Benchmark_Cuberat_Marshal(b *testing.B) {
+func BenchmarkMarshal_Cuberat(b *testing.B) {
 	b.Skip()
 	buf := bytes.NewBuffer(make([]byte, 0, 1<<12))
 	b.ReportAllocs()
@@ -199,5 +201,21 @@ func Benchmark_Cuberat_Marshal(b *testing.B) {
 		if err != nil {
 			b.Fatal(err)
 		}
+	}
+}
+
+func BenchmarkMarshal_trim21(b *testing.B) {
+	b.ReportAllocs()
+	for n := 0; n < b.N; n++ {
+		_, err := trim21.Marshal(marshalBenchData)
+		if err != nil {
+			b.Fatal(err)
+		}
+	}
+}
+
+func sink[T any](tb testing.TB, v T) {
+	if rand.Float32() > 2 {
+		tb.Fatal(v)
 	}
 }

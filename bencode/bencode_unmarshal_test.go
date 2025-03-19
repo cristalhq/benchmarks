@@ -15,13 +15,14 @@ import (
 	marksamman "github.com/marksamman/bencode"
 	nabilanam "github.com/nabilanam/bencode/decoder"
 	owenliang "github.com/owenliang/dht"
+	trim21 "github.com/trim21/go-bencode"
 	tumdum "github.com/tumdum/bencoding"
 	zeebo "github.com/zeebo/bencode"
 )
 
 var unmarshalBenchData = []byte("d4:infod6:lengthi170917888e12:piece lengthi262144e4:name30:debian-8.8.0-arm64-netinst.isoe8:announce38:udp://tracker.publicbt.com:80/announce13:announce-listll38:udp://tracker.publicbt.com:80/announceel44:udp://tracker.openbittorrent.com:80/announceee7:comment33:Debian CD from cdimage.debian.orge")
 
-func Benchmark_cristalhq_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_cristalhq(b *testing.B) {
 	var res interface{}
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
@@ -35,7 +36,7 @@ func Benchmark_cristalhq_Unmarshal(b *testing.B) {
 	}
 }
 
-func Benchmark_cristalhq_UnmarshalReader(b *testing.B) {
+func BenchmarkUnmarshalReader_cristalhq(b *testing.B) {
 	var res interface{}
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
@@ -50,7 +51,7 @@ func Benchmark_cristalhq_UnmarshalReader(b *testing.B) {
 	}
 }
 
-func Benchmark_IncSW_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_IncSW(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		_, err := IncSW.Unmarshal(unmarshalBenchData)
@@ -60,7 +61,7 @@ func Benchmark_IncSW_Unmarshal(b *testing.B) {
 	}
 }
 
-func Benchmark_ZeeboBencode_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_ZeeboBencode(b *testing.B) {
 	res := map[string]interface{}{}
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
@@ -74,7 +75,7 @@ func Benchmark_ZeeboBencode_Unmarshal(b *testing.B) {
 	}
 }
 
-func Benchmark_NabilanamBencode_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_NabilanamBencode(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		res := nabilanam.New(unmarshalBenchData).Decode()
@@ -84,7 +85,7 @@ func Benchmark_NabilanamBencode_Unmarshal(b *testing.B) {
 	}
 }
 
-func Benchmark_MarksammanBencode_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_MarksammanBencode(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		r := bytes.NewReader(unmarshalBenchData)
@@ -95,7 +96,7 @@ func Benchmark_MarksammanBencode_Unmarshal(b *testing.B) {
 	}
 }
 
-func Benchmark_JackpalBencode_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_JackpalBencode(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		r := bytes.NewReader(unmarshalBenchData)
@@ -106,7 +107,7 @@ func Benchmark_JackpalBencode_Unmarshal(b *testing.B) {
 	}
 }
 
-func Benchmark_AnacrolixTorrent_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_AnacrolixTorrent(b *testing.B) {
 	b.Skip()
 	res := map[string]interface{}{}
 	b.ReportAllocs()
@@ -121,7 +122,7 @@ func Benchmark_AnacrolixTorrent_Unmarshal(b *testing.B) {
 	}
 }
 
-func Benchmark_OwenliangDht_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_OwenliangDht(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		res, err := owenliang.Decode(unmarshalBenchData)
@@ -134,7 +135,7 @@ func Benchmark_OwenliangDht_Unmarshal(b *testing.B) {
 	}
 }
 
-func Benchmark_TumdumBencoding_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_TumdumBencoding(b *testing.B) {
 	b.Skip()
 	res := map[string]interface{}{}
 	b.ReportAllocs()
@@ -149,11 +150,26 @@ func Benchmark_TumdumBencoding_Unmarshal(b *testing.B) {
 	}
 }
 
-func Benchmark_StintsBencode_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_trim21Bencoding(b *testing.B) {
+	b.Skip()
+	res := map[string]interface{}{}
+	b.ReportAllocs()
+	for n := 0; n < b.N; n++ {
+		err := trim21.Unmarshal(unmarshalBenchData, &res)
+		if err != nil {
+			b.Fatal(err)
+		}
+		if res == nil {
+			b.Fatal("is nil")
+		}
+	}
+}
+
+func BenchmarkUnmarshal_StintsBencode(b *testing.B) {
 	b.Skip()
 }
 
-func Benchmark_LwchBencode_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_LwchBencode(b *testing.B) {
 	b.Skip()
 	res := map[string]interface{}{}
 	b.ReportAllocs()
@@ -168,11 +184,11 @@ func Benchmark_LwchBencode_Unmarshal(b *testing.B) {
 	}
 }
 
-func Benchmark_ClearcodecnBencode_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_ClearcodecnBencode(b *testing.B) {
 	b.Skip()
 }
 
-func Benchmark_LajideBencode_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_LajideBencode(b *testing.B) {
 	b.Skip()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
@@ -187,7 +203,7 @@ func Benchmark_LajideBencode_Unmarshal(b *testing.B) {
 	}
 }
 
-func Benchmark_CuberatGoBencode_Unmarshal(b *testing.B) {
+func BenchmarkUnmarshal_CuberatGoBencode(b *testing.B) {
 	b.Skip()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {

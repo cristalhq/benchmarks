@@ -1,0 +1,237 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/cristalhq/benches/bencode
+cpu: Apple M1 Pro
+BenchmarkMarshal_cristalhq
+BenchmarkMarshal_cristalhq-10               	 2009913	       584.7 ns/op	     976 B/op	       3 allocs/op
+BenchmarkMarshal_cristalhq-10               	 2013957	       585.8 ns/op	     976 B/op	       3 allocs/op
+BenchmarkMarshal_cristalhq-10               	 2041666	       586.8 ns/op	     976 B/op	       3 allocs/op
+BenchmarkMarshal_cristalhq-10               	 2053471	       587.2 ns/op	     976 B/op	       3 allocs/op
+BenchmarkMarshal_cristalhq-10               	 2045490	       587.8 ns/op	     976 B/op	       3 allocs/op
+BenchmarkMarshal_cristalhq-10               	 2054179	       591.0 ns/op	     976 B/op	       3 allocs/op
+BenchmarkMarshal_cristalhq-10               	 2030848	       592.3 ns/op	     976 B/op	       3 allocs/op
+BenchmarkMarshal_cristalhq-10               	 2038424	       586.3 ns/op	     976 B/op	       3 allocs/op
+BenchmarkMarshal_cristalhq-10               	 2052814	       586.8 ns/op	     976 B/op	       3 allocs/op
+BenchmarkMarshal_cristalhq-10               	 2033809	       589.2 ns/op	     976 B/op	       3 allocs/op
+BenchmarkMarshalTo_cristalhq
+BenchmarkMarshalTo_cristalhq-10             	 2762188	       430.9 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_cristalhq-10             	 2775260	       432.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_cristalhq-10             	 2790759	       432.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_cristalhq-10             	 2782357	       431.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_cristalhq-10             	 2754309	       431.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_cristalhq-10             	 2773788	       431.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_cristalhq-10             	 2781884	       431.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_cristalhq-10             	 2776572	       432.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_cristalhq-10             	 2768210	       429.9 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_cristalhq-10             	 2777311	       429.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshal_IncSW
+BenchmarkMarshal_IncSW-10                   	 2799682	       427.7 ns/op	     512 B/op	       1 allocs/op
+BenchmarkMarshal_IncSW-10                   	 2803866	       428.3 ns/op	     512 B/op	       1 allocs/op
+BenchmarkMarshal_IncSW-10                   	 2818731	       426.2 ns/op	     512 B/op	       1 allocs/op
+BenchmarkMarshal_IncSW-10                   	 2799750	       428.4 ns/op	     512 B/op	       1 allocs/op
+BenchmarkMarshal_IncSW-10                   	 2807547	       430.9 ns/op	     512 B/op	       1 allocs/op
+BenchmarkMarshal_IncSW-10                   	 2814783	       429.3 ns/op	     512 B/op	       1 allocs/op
+BenchmarkMarshal_IncSW-10                   	 2805139	       428.1 ns/op	     512 B/op	       1 allocs/op
+BenchmarkMarshal_IncSW-10                   	 2808949	       427.9 ns/op	     512 B/op	       1 allocs/op
+BenchmarkMarshal_IncSW-10                   	 2802765	       429.3 ns/op	     512 B/op	       1 allocs/op
+BenchmarkMarshal_IncSW-10                   	 2788765	       431.2 ns/op	     512 B/op	       1 allocs/op
+BenchmarkMarshalTo_IncSW
+BenchmarkMarshalTo_IncSW-10                 	 3245074	       369.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_IncSW-10                 	 3276643	       367.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_IncSW-10                 	 3275422	       367.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_IncSW-10                 	 3270837	       366.9 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_IncSW-10                 	 3274083	       366.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_IncSW-10                 	 3266784	       366.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_IncSW-10                 	 3244539	       367.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_IncSW-10                 	 3259670	       367.5 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_IncSW-10                 	 3256080	       366.7 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshalTo_IncSW-10                 	 3279346	       365.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMarshal_Zeebo
+BenchmarkMarshal_Zeebo-10                   	  405915	      2907 ns/op	    1648 B/op	      36 allocs/op
+BenchmarkMarshal_Zeebo-10                   	  412474	      2908 ns/op	    1648 B/op	      36 allocs/op
+BenchmarkMarshal_Zeebo-10                   	  414492	      2907 ns/op	    1648 B/op	      36 allocs/op
+BenchmarkMarshal_Zeebo-10                   	  405930	      2922 ns/op	    1648 B/op	      36 allocs/op
+BenchmarkMarshal_Zeebo-10                   	  413424	      2915 ns/op	    1648 B/op	      36 allocs/op
+BenchmarkMarshal_Zeebo-10                   	  402301	      2906 ns/op	    1648 B/op	      36 allocs/op
+BenchmarkMarshal_Zeebo-10                   	  398899	      2909 ns/op	    1648 B/op	      36 allocs/op
+BenchmarkMarshal_Zeebo-10                   	  409749	      2904 ns/op	    1648 B/op	      36 allocs/op
+BenchmarkMarshal_Zeebo-10                   	  407725	      2907 ns/op	    1648 B/op	      36 allocs/op
+BenchmarkMarshal_Zeebo-10                   	  408729	      2894 ns/op	    1648 B/op	      36 allocs/op
+BenchmarkMarshal_Marksamman
+BenchmarkMarshal_Marksamman-10              	 1758298	       686.0 ns/op	    1136 B/op	      10 allocs/op
+BenchmarkMarshal_Marksamman-10              	 1760532	       684.4 ns/op	    1136 B/op	      10 allocs/op
+BenchmarkMarshal_Marksamman-10              	 1725098	       689.0 ns/op	    1136 B/op	      10 allocs/op
+BenchmarkMarshal_Marksamman-10              	 1755135	       685.1 ns/op	    1136 B/op	      10 allocs/op
+BenchmarkMarshal_Marksamman-10              	 1748733	       686.1 ns/op	    1136 B/op	      10 allocs/op
+BenchmarkMarshal_Marksamman-10              	 1753906	       682.0 ns/op	    1136 B/op	      10 allocs/op
+BenchmarkMarshal_Marksamman-10              	 1753540	       683.7 ns/op	    1136 B/op	      10 allocs/op
+BenchmarkMarshal_Marksamman-10              	 1755504	       689.2 ns/op	    1136 B/op	      10 allocs/op
+BenchmarkMarshal_Marksamman-10              	 1748010	       683.4 ns/op	    1136 B/op	      10 allocs/op
+BenchmarkMarshal_Marksamman-10              	 1754347	       686.8 ns/op	    1136 B/op	      10 allocs/op
+BenchmarkMarshal_Anacrolix
+BenchmarkMarshal_Anacrolix-10               	  707020	      1752 ns/op	    2046 B/op	      19 allocs/op
+BenchmarkMarshal_Anacrolix-10               	  718606	      1695 ns/op	    2022 B/op	      19 allocs/op
+BenchmarkMarshal_Anacrolix-10               	  713001	      1673 ns/op	    2033 B/op	      19 allocs/op
+BenchmarkMarshal_Anacrolix-10               	  689817	      1685 ns/op	    2084 B/op	      19 allocs/op
+BenchmarkMarshal_Anacrolix-10               	  716342	      1695 ns/op	    2026 B/op	      19 allocs/op
+BenchmarkMarshal_Anacrolix-10               	  728218	      1697 ns/op	    2002 B/op	      19 allocs/op
+BenchmarkMarshal_Anacrolix-10               	  713488	      1697 ns/op	    2032 B/op	      19 allocs/op
+BenchmarkMarshal_Anacrolix-10               	  713511	      1691 ns/op	    2032 B/op	      19 allocs/op
+BenchmarkMarshal_Anacrolix-10               	  733800	      1688 ns/op	    1991 B/op	      19 allocs/op
+BenchmarkMarshal_Anacrolix-10               	  707570	      1696 ns/op	    2045 B/op	      19 allocs/op
+BenchmarkMarshal_Nabilanam
+    bencode_marshal_test.go:116: 
+--- SKIP: BenchmarkMarshal_Nabilanam
+BenchmarkMarshal_Jackpal
+BenchmarkMarshal_Jackpal-10                 	  465543	      2572 ns/op	    2305 B/op	      39 allocs/op
+BenchmarkMarshal_Jackpal-10                 	  459782	      2593 ns/op	    2319 B/op	      39 allocs/op
+BenchmarkMarshal_Jackpal-10                 	  465618	      2612 ns/op	    2305 B/op	      39 allocs/op
+BenchmarkMarshal_Jackpal-10                 	  455370	      2611 ns/op	    2331 B/op	      39 allocs/op
+BenchmarkMarshal_Jackpal-10                 	  453063	      2615 ns/op	    2337 B/op	      39 allocs/op
+BenchmarkMarshal_Jackpal-10                 	  470469	      2631 ns/op	    2293 B/op	      39 allocs/op
+BenchmarkMarshal_Jackpal-10                 	  452960	      2599 ns/op	    2337 B/op	      39 allocs/op
+BenchmarkMarshal_Jackpal-10                 	  465477	      2605 ns/op	    2305 B/op	      39 allocs/op
+BenchmarkMarshal_Jackpal-10                 	  462603	      2603 ns/op	    2312 B/op	      39 allocs/op
+BenchmarkMarshal_Jackpal-10                 	  471976	      2611 ns/op	    2289 B/op	      39 allocs/op
+BenchmarkMarshal_Owenliang
+    bencode_marshal_test.go:138: 
+--- SKIP: BenchmarkMarshal_Owenliang
+BenchmarkMarshal_Tumdum
+    bencode_marshal_test.go:149: 
+--- SKIP: BenchmarkMarshal_Tumdum
+BenchmarkMarshal_Stints
+    bencode_marshal_test.go:161: 
+--- SKIP: BenchmarkMarshal_Stints
+BenchmarkMarshal_Lwch
+    bencode_marshal_test.go:172: 
+--- SKIP: BenchmarkMarshal_Lwch
+BenchmarkMarshal_Lajide
+    bencode_marshal_test.go:184: 
+--- SKIP: BenchmarkMarshal_Lajide
+BenchmarkMarshal_Cuberat
+    bencode_marshal_test.go:196: 
+--- SKIP: BenchmarkMarshal_Cuberat
+BenchmarkMarshal_trim21
+BenchmarkMarshal_trim21-10                  	 1000000	      1037 ns/op	     816 B/op	      17 allocs/op
+BenchmarkMarshal_trim21-10                  	 1000000	      1047 ns/op	     816 B/op	      17 allocs/op
+BenchmarkMarshal_trim21-10                  	 1000000	      1059 ns/op	     816 B/op	      17 allocs/op
+BenchmarkMarshal_trim21-10                  	 1000000	      1032 ns/op	     816 B/op	      17 allocs/op
+BenchmarkMarshal_trim21-10                  	 1000000	      1035 ns/op	     816 B/op	      17 allocs/op
+BenchmarkMarshal_trim21-10                  	 1000000	      1033 ns/op	     816 B/op	      17 allocs/op
+BenchmarkMarshal_trim21-10                  	 1000000	      1033 ns/op	     816 B/op	      17 allocs/op
+BenchmarkMarshal_trim21-10                  	 1000000	      1034 ns/op	     816 B/op	      17 allocs/op
+BenchmarkMarshal_trim21-10                  	 1000000	      1031 ns/op	     816 B/op	      17 allocs/op
+BenchmarkMarshal_trim21-10                  	 1000000	      1032 ns/op	     816 B/op	      17 allocs/op
+BenchmarkUnmarshal_cristalhq
+BenchmarkUnmarshal_cristalhq-10             	 1828659	       666.8 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_cristalhq-10             	 1819724	       660.4 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_cristalhq-10             	 1834526	       652.4 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_cristalhq-10             	 1836558	       653.6 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_cristalhq-10             	 1829250	       654.4 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_cristalhq-10             	 1831160	       655.8 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_cristalhq-10             	 1795783	       676.1 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_cristalhq-10             	 1764549	       655.1 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_cristalhq-10             	 1839320	       650.9 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_cristalhq-10             	 1841997	       655.5 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshalReader_cristalhq
+BenchmarkUnmarshalReader_cristalhq-10       	 1587648	       745.7 ns/op	    1520 B/op	      20 allocs/op
+BenchmarkUnmarshalReader_cristalhq-10       	 1606083	       758.4 ns/op	    1520 B/op	      20 allocs/op
+BenchmarkUnmarshalReader_cristalhq-10       	 1575896	       748.2 ns/op	    1520 B/op	      20 allocs/op
+BenchmarkUnmarshalReader_cristalhq-10       	 1593466	       746.7 ns/op	    1520 B/op	      20 allocs/op
+BenchmarkUnmarshalReader_cristalhq-10       	 1609516	       745.8 ns/op	    1520 B/op	      20 allocs/op
+BenchmarkUnmarshalReader_cristalhq-10       	 1599472	       742.5 ns/op	    1520 B/op	      20 allocs/op
+BenchmarkUnmarshalReader_cristalhq-10       	 1603202	       756.4 ns/op	    1520 B/op	      20 allocs/op
+BenchmarkUnmarshalReader_cristalhq-10       	 1608195	       753.7 ns/op	    1520 B/op	      20 allocs/op
+BenchmarkUnmarshalReader_cristalhq-10       	 1594116	       746.6 ns/op	    1520 B/op	      20 allocs/op
+BenchmarkUnmarshalReader_cristalhq-10       	 1610514	       749.9 ns/op	    1520 B/op	      20 allocs/op
+BenchmarkUnmarshal_IncSW
+BenchmarkUnmarshal_IncSW-10                 	 1980639	       608.3 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_IncSW-10                 	 1976785	       608.2 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_IncSW-10                 	 1955937	       613.4 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_IncSW-10                 	 1942152	       612.6 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_IncSW-10                 	 1965170	       608.6 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_IncSW-10                 	 1982922	       608.1 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_IncSW-10                 	 1967841	       606.6 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_IncSW-10                 	 1980147	       613.6 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_IncSW-10                 	 1964594	       611.8 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_IncSW-10                 	 1960146	       607.6 ns/op	     960 B/op	      18 allocs/op
+BenchmarkUnmarshal_ZeeboBencode
+BenchmarkUnmarshal_ZeeboBencode-10          	  385734	      3033 ns/op	    5984 B/op	      79 allocs/op
+BenchmarkUnmarshal_ZeeboBencode-10          	  398133	      3103 ns/op	    5984 B/op	      79 allocs/op
+BenchmarkUnmarshal_ZeeboBencode-10          	  396951	      3024 ns/op	    5984 B/op	      79 allocs/op
+BenchmarkUnmarshal_ZeeboBencode-10          	  391438	      3023 ns/op	    5984 B/op	      79 allocs/op
+BenchmarkUnmarshal_ZeeboBencode-10          	  409591	      3016 ns/op	    5984 B/op	      79 allocs/op
+BenchmarkUnmarshal_ZeeboBencode-10          	  386419	      3079 ns/op	    5984 B/op	      79 allocs/op
+BenchmarkUnmarshal_ZeeboBencode-10          	  394400	      3077 ns/op	    5984 B/op	      79 allocs/op
+BenchmarkUnmarshal_ZeeboBencode-10          	  382522	      3056 ns/op	    5984 B/op	      79 allocs/op
+BenchmarkUnmarshal_ZeeboBencode-10          	  399247	      3013 ns/op	    5984 B/op	      79 allocs/op
+BenchmarkUnmarshal_ZeeboBencode-10          	  397470	      3016 ns/op	    5984 B/op	      79 allocs/op
+BenchmarkUnmarshal_NabilanamBencode
+BenchmarkUnmarshal_NabilanamBencode-10      	 1481443	       811.5 ns/op	    1216 B/op	      30 allocs/op
+BenchmarkUnmarshal_NabilanamBencode-10      	 1483329	       811.0 ns/op	    1216 B/op	      30 allocs/op
+BenchmarkUnmarshal_NabilanamBencode-10      	 1461174	       820.9 ns/op	    1216 B/op	      30 allocs/op
+BenchmarkUnmarshal_NabilanamBencode-10      	 1468635	       811.9 ns/op	    1216 B/op	      30 allocs/op
+BenchmarkUnmarshal_NabilanamBencode-10      	 1473032	       810.5 ns/op	    1216 B/op	      30 allocs/op
+BenchmarkUnmarshal_NabilanamBencode-10      	 1479650	       811.1 ns/op	    1216 B/op	      30 allocs/op
+BenchmarkUnmarshal_NabilanamBencode-10      	 1480027	       813.8 ns/op	    1216 B/op	      30 allocs/op
+BenchmarkUnmarshal_NabilanamBencode-10      	 1460798	       819.6 ns/op	    1216 B/op	      30 allocs/op
+BenchmarkUnmarshal_NabilanamBencode-10      	 1476433	       812.0 ns/op	    1216 B/op	      30 allocs/op
+BenchmarkUnmarshal_NabilanamBencode-10      	 1476417	       811.9 ns/op	    1216 B/op	      30 allocs/op
+BenchmarkUnmarshal_MarksammanBencode
+BenchmarkUnmarshal_MarksammanBencode-10     	  740906	      1621 ns/op	    5736 B/op	      45 allocs/op
+BenchmarkUnmarshal_MarksammanBencode-10     	  758034	      1614 ns/op	    5736 B/op	      45 allocs/op
+BenchmarkUnmarshal_MarksammanBencode-10     	  758178	      1622 ns/op	    5736 B/op	      45 allocs/op
+BenchmarkUnmarshal_MarksammanBencode-10     	  750451	      1620 ns/op	    5736 B/op	      45 allocs/op
+BenchmarkUnmarshal_MarksammanBencode-10     	  688120	      1670 ns/op	    5736 B/op	      45 allocs/op
+BenchmarkUnmarshal_MarksammanBencode-10     	  611038	      1649 ns/op	    5736 B/op	      45 allocs/op
+BenchmarkUnmarshal_MarksammanBencode-10     	  735393	      1637 ns/op	    5736 B/op	      45 allocs/op
+BenchmarkUnmarshal_MarksammanBencode-10     	  753264	      1638 ns/op	    5736 B/op	      45 allocs/op
+BenchmarkUnmarshal_MarksammanBencode-10     	  765981	      1615 ns/op	    5736 B/op	      45 allocs/op
+BenchmarkUnmarshal_MarksammanBencode-10     	  750718	      1613 ns/op	    5736 B/op	      45 allocs/op
+BenchmarkUnmarshal_JackpalBencode
+BenchmarkUnmarshal_JackpalBencode-10        	  833187	      1447 ns/op	    1656 B/op	      50 allocs/op
+BenchmarkUnmarshal_JackpalBencode-10        	  841074	      1448 ns/op	    1656 B/op	      50 allocs/op
+BenchmarkUnmarshal_JackpalBencode-10        	  834394	      1447 ns/op	    1656 B/op	      50 allocs/op
+BenchmarkUnmarshal_JackpalBencode-10        	  830571	      1465 ns/op	    1656 B/op	      50 allocs/op
+BenchmarkUnmarshal_JackpalBencode-10        	  842365	      1446 ns/op	    1656 B/op	      50 allocs/op
+BenchmarkUnmarshal_JackpalBencode-10        	  833364	      1442 ns/op	    1656 B/op	      50 allocs/op
+BenchmarkUnmarshal_JackpalBencode-10        	  813896	      1456 ns/op	    1656 B/op	      50 allocs/op
+BenchmarkUnmarshal_JackpalBencode-10        	  841706	      1442 ns/op	    1656 B/op	      50 allocs/op
+BenchmarkUnmarshal_JackpalBencode-10        	  842925	      1439 ns/op	    1656 B/op	      50 allocs/op
+BenchmarkUnmarshal_JackpalBencode-10        	  835899	      1445 ns/op	    1656 B/op	      50 allocs/op
+BenchmarkUnmarshal_AnacrolixTorrent
+    bencode_unmarshal_test.go:111: 
+--- SKIP: BenchmarkUnmarshal_AnacrolixTorrent
+BenchmarkUnmarshal_OwenliangDht
+BenchmarkUnmarshal_OwenliangDht-10          	 1236694	       988.3 ns/op	    1328 B/op	      37 allocs/op
+BenchmarkUnmarshal_OwenliangDht-10          	 1215660	       976.5 ns/op	    1328 B/op	      37 allocs/op
+BenchmarkUnmarshal_OwenliangDht-10          	 1228938	       973.8 ns/op	    1328 B/op	      37 allocs/op
+BenchmarkUnmarshal_OwenliangDht-10          	 1230790	       977.8 ns/op	    1328 B/op	      37 allocs/op
+BenchmarkUnmarshal_OwenliangDht-10          	 1227969	       975.2 ns/op	    1328 B/op	      37 allocs/op
+BenchmarkUnmarshal_OwenliangDht-10          	 1211706	       985.2 ns/op	    1328 B/op	      37 allocs/op
+BenchmarkUnmarshal_OwenliangDht-10          	 1227414	       978.7 ns/op	    1328 B/op	      37 allocs/op
+BenchmarkUnmarshal_OwenliangDht-10          	 1239370	       975.9 ns/op	    1328 B/op	      37 allocs/op
+BenchmarkUnmarshal_OwenliangDht-10          	 1232946	       973.5 ns/op	    1328 B/op	      37 allocs/op
+BenchmarkUnmarshal_OwenliangDht-10          	 1226077	       988.1 ns/op	    1328 B/op	      37 allocs/op
+BenchmarkUnmarshal_TumdumBencoding
+    bencode_unmarshal_test.go:139: 
+--- SKIP: BenchmarkUnmarshal_TumdumBencoding
+BenchmarkUnmarshal_trim21Bencoding
+    bencode_unmarshal_test.go:154: 
+--- SKIP: BenchmarkUnmarshal_trim21Bencoding
+BenchmarkUnmarshal_StintsBencode
+    bencode_unmarshal_test.go:169: 
+--- SKIP: BenchmarkUnmarshal_StintsBencode
+BenchmarkUnmarshal_LwchBencode
+    bencode_unmarshal_test.go:173: 
+--- SKIP: BenchmarkUnmarshal_LwchBencode
+BenchmarkUnmarshal_ClearcodecnBencode
+    bencode_unmarshal_test.go:188: 
+--- SKIP: BenchmarkUnmarshal_ClearcodecnBencode
+BenchmarkUnmarshal_LajideBencode
+    bencode_unmarshal_test.go:192: 
+--- SKIP: BenchmarkUnmarshal_LajideBencode
+BenchmarkUnmarshal_CuberatGoBencode
+    bencode_unmarshal_test.go:207: 
+--- SKIP: BenchmarkUnmarshal_CuberatGoBencode
+PASS
