@@ -1,11 +1,11 @@
 module github.com/cristalhq/benches
 
-go 1.21.4
+go 1.24
 
 // bencode
 require (
 	github.com/IncSW/go-bencode v0.2.2
-	github.com/anacrolix/torrent v1.53.3
+	github.com/anacrolix/torrent v1.56.1
 	github.com/cristalhq/bencode v0.4.0
 	github.com/cuberat/go-bencode v1.0.0
 	github.com/jackpal/bencode-go v1.0.2
@@ -15,24 +15,26 @@ require (
 	github.com/nabilanam/bencode v0.0.0-20190329141800-cde546b1530b
 	github.com/owenliang/dht v0.0.0-20180118074908-44baeeba7b13
 	github.com/stints/bencode v0.0.0-20160226205624-0ba65bd80165
+	github.com/trim21/go-bencode v0.0.7
 	github.com/tumdum/bencoding v0.0.0-20160911135503-fcfcb8bd55e9
 	github.com/zeebo/bencode v1.0.0
 )
 
 // bson
 require (
-	github.com/cristalhq/bson v0.0.7
+	github.com/LonelyPale/bson v0.0.0-20140623121534-afedef517cc9
+	github.com/cristalhq/bson v0.0.8
 	github.com/globalsign/mgo v0.0.0-20181015135952-eeefdecb41b8
 	github.com/go-micro/go-bson v1.0.0
-	go.mongodb.org/mongo-driver v1.13.1
+	go.mongodb.org/mongo-driver v1.16.0
 	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22
 )
 
 // jwt
 require (
-	github.com/cristalhq/jwt/v4 v4.0.2
+	github.com/cristalhq/jwt/v5 v5.4.0
 	github.com/golang-jwt/jwt v3.2.2+incompatible
-	github.com/lestrrat-go/jwx v1.2.28
+	github.com/lestrrat-go/jwx v1.2.30
 	github.com/pascaldekloe/jwt v1.12.0
 )
 
@@ -49,7 +51,7 @@ require (
 
 // qrcode
 require (
-	github.com/boombuler/barcode v1.0.1
+	github.com/boombuler/barcode v1.0.2
 	github.com/cristalhq/qrcode v0.1.0
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e
 	github.com/yeqown/go-qrcode v1.5.10
@@ -58,15 +60,15 @@ require (
 
 require (
 	github.com/anacrolix/missinggo v1.3.0 // indirect
-	github.com/anacrolix/missinggo/v2 v2.7.2-0.20230527121029-a582b4f397b9 // indirect
+	github.com/anacrolix/missinggo/v2 v2.7.3 // indirect
 	github.com/fogleman/gg v1.3.0 // indirect
-	github.com/goccy/go-json v0.10.2 // indirect
+	github.com/goccy/go-json v0.10.3 // indirect
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
-	github.com/huandu/xstrings v1.3.2 // indirect
+	github.com/huandu/xstrings v1.5.0 // indirect
 	github.com/lestrrat-go/option v1.0.1 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/smartystreets/goconvey v1.8.1 // indirect
 	github.com/yeqown/reedsolomon v1.0.0 // indirect
-	golang.org/x/image v0.13.0 // indirect
+	golang.org/x/image v0.18.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
