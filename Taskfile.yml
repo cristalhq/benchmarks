@@ -19,7 +19,10 @@ tasks:
   run-*:
     vars:
       NAME: '{{index .MATCH 0}}'
+      FLAGS: '-test.v -test.benchmem -test.run ^$ -test.count 10'
+    dir: '{{.NAME}}'
     cmds:
-      - go test -c -o {{.NAME}}-bench.exec ./{{.NAME}}
-      - time ./{{.NAME}}-bench.exec -test.v -test.benchmem -test.bench ^Benchmark -test.count 3 -test.run ^$ > bench-raw.txt
+      - go test -c -o bench.exec
+      - time ./bench.exec {{.FLAGS}} -test.bench ^Benchmark > bench-raw.txt
+      - rm bench.exec
       - go-perftuner bstat bench-raw.txt | tee bench.txt
