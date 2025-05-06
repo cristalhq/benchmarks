@@ -204,10 +204,51 @@ func BenchmarkMarshal_Cuberat(b *testing.B) {
 	}
 }
 
+type TorrentInfo struct {
+	Name        string `bencode:"name"`
+	Length      uint64 `bencode:"length"`
+	PieceLength uint64 `bencode:"piece length"`
+}
+
+type Torrent struct {
+	Announce     string      `bencode:"announce"`
+	AnnounceList [][]string  `bencode:"announce-list"`
+	Comment      []byte      `bencode:"comment"`
+	Info         TorrentInfo `bencode:"info"`
+}
+
+var marshalBenchStructData = Torrent{
+	Announce: "udp://tracker.publicbt.com:80/announce",
+	AnnounceList: [][]string{
+		[]string{("udp://tracker.publicbt.com:80/announce")},
+		[]string{"udp://tracker.openbittorrent.com:80/announce"},
+		[]string{
+			"udp://tracker.openbittorrent.com:80/announce",
+			"udp://tracker.openbittorrent.com:80/announce",
+		},
+	},
+	Comment: []byte("Debian CD from cdimage.debian.org"),
+	Info: TorrentInfo{
+		Name:        "debian-8.8.0-arm64-netinst.iso",
+		Length:      170917888,
+		PieceLength: 262144,
+	},
+}
+
 func BenchmarkMarshal_trim21(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
 		_, err := trim21.Marshal(marshalBenchData)
+		if err != nil {
+			b.Fatal(err)
+		}
+	}
+}
+
+func BenchmarkMarshal_trim21_struct(b *testing.B) {
+	b.ReportAllocs()
+	for n := 0; n < b.N; n++ {
+		_, err := trim21.Marshal(marshalBenchStructData)
 		if err != nil {
 			b.Fatal(err)
 		}
